@@ -431,13 +431,14 @@ script = ExtResource( 1 )
 frames = SubResource( 1 )
 animation = "idle"
 playing = true
+offset = Vector2( 52.8, -13.19 )
 
 [node name="Body" type="AnimatedSprite" parent="Player"]
 frames = SubResource( 2 )
 animation = "move_rifle"
-frame = 17
+frame = 3
 playing = true
+offset = Vector2( 52.8, -13.19 )
 
 [node name="Collision" type="CollisionShape2D" parent="Player"]
-position = Vector2( -43.25, 10.7 )
 shape = SubResource( 3 )
