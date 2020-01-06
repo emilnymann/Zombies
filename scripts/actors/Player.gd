@@ -37,6 +37,7 @@ func _physics_process(delta):
 	if move_vec == Vector2(0, 0):
 		body.play("idle_rifle")
 		feet.play("idle")
+		feet.global_rotation = atan2(look_vec.y, look_vec.x)
 	else:
 		body.play("move_rifle")
 		feet.play("walk")
