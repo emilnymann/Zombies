@@ -26,3 +26,7 @@ func _physics_process(delta):
 		move_vec.x += 1
 	move_vec = move_vec.normalized()
 	move_and_collide(move_vec * MOVE_SPEED * delta)
+	
+	# mouse look, rotate only the Body sprite
+	var look_vec = get_global_mouse_position() - global_position
+	get_child(1).global_rotation = atan2(look_vec.y, look_vec.x)
