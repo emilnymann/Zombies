@@ -7,12 +7,13 @@ extends KinematicBody2D
 const MOVE_SPEED = 300
 const FIRE_RATE = 0.1 # time between each bullet
 const DAMAGE = 20
-var time = FIRE_RATE
+var fire_ready = true
 var flashlight_toggle = false # is flashlight on or off?
 
 onready var raycast = $Body/RayCastGun
 onready var muzzle = $Body/MuzzleFlash
 onready var muzzletimer = $Body/MuzzleFlash/Timer
+onready var firetimer = $FirerateTimer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -47,9 +48,9 @@ func _physics_process(delta):
 			flashlight.visible = false;
 			
 	if Input.is_action_pressed("fire"):
-		time += delta
-		if time >= FIRE_RATE:
-			time = 0
+		if fire_ready == true:
+			fire_ready = false
+			firetimer.start(FIRE_RATE)
 			fire()
 			
 		
@@ -76,3 +77,7 @@ func fire():
 
 func _on_muzzle_timeout():
 	muzzle.visible = false
+
+
+func _on_FirerateTimer_timeout():
+	fire_ready = true
