@@ -436,7 +436,7 @@ offset = Vector2( 52.8, -13.19 )
 [node name="Body" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 15
+frame = 1
 playing = true
 offset = Vector2( 52.8, -13.19 )
 
@@ -456,12 +456,15 @@ enabled = true
 cast_to = Vector2( 2000, 0 )
 
 [node name="MuzzleFlash" type="Light2D" parent="Body"]
+editor/display_folded = true
 visible = false
 position = Vector2( 203.879, 35.858 )
 scale = Vector2( 2.02452, 2.02452 )
 texture = ExtResource( 313 )
+texture_scale = 2.0
 color = Color( 0.921569, 0.639216, 0.105882, 1 )
 energy = 1.5
+shadow_enabled = true
 
 [node name="Timer" type="Timer" parent="Body/MuzzleFlash"]
 wait_time = 0.05

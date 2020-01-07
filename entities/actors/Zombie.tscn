@@ -82,7 +82,7 @@ occluder = SubResource( 3 )
 position = Vector2( 15.32, -10.31 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 2
+frame = 10
 playing = true
 
 [node name="Collision" type="CollisionShape2D" parent="."]

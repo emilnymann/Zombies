@@ -68,7 +68,7 @@ func _physics_process(delta):
 		
 func fire():
 	print("FIRED!")
-	muzzle.visible = true;
+	muzzle.visible = true
 	muzzletimer.start(-1)
 	var coll = raycast.get_collider()
 	if raycast.is_colliding() and coll.has_method("take_damage"):
