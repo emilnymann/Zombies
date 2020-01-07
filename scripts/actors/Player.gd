@@ -5,7 +5,12 @@ extends KinematicBody2D
 # var b = "text"
 
 const MOVE_SPEED = 300
-var flashlight_toggle = false
+const FIRE_RATE = 0.1 # time between each bullet
+const DAMAGE = 20
+var time = FIRE_RATE
+var flashlight_toggle = false # is flashlight on or off?
+
+onready var raycast = $Body/RayCastGun
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -30,6 +35,7 @@ func _physics_process(delta):
 		move_vec.x -= 1
 	if Input.is_action_pressed("move_right"):
 		move_vec.x += 1
+		
 	if Input.is_action_just_pressed("flashlight_toggle"):
 		flashlight_toggle = !flashlight_toggle
 		
@@ -37,6 +43,13 @@ func _physics_process(delta):
 			flashlight.visible = true;
 		else:
 			flashlight.visible = false;
+			
+	if Input.is_action_pressed("fire"):
+		time += delta
+		if time >= FIRE_RATE:
+			time = 0
+			fire()
+			
 		
 #	move_vec = move_vec.normalized()
 	move_and_collide(move_vec * MOVE_SPEED * delta)
@@ -50,3 +63,9 @@ func _physics_process(delta):
 	else:
 		body.play("move_rifle")
 		feet.play("walk")
+		
+func fire():
+	print("FIRED!")
+	var coll = raycast.get_collider()
+	if raycast.is_colliding() and coll.has_method("take_damage"):
+		coll.take_damage(DAMAGE)
