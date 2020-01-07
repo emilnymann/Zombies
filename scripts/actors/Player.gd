@@ -11,6 +11,8 @@ var time = FIRE_RATE
 var flashlight_toggle = false # is flashlight on or off?
 
 onready var raycast = $Body/RayCastGun
+onready var muzzle = $Body/MuzzleFlash
+onready var muzzletimer = $Body/MuzzleFlash/Timer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -66,6 +68,11 @@ func _physics_process(delta):
 		
 func fire():
 	print("FIRED!")
+	muzzle.visible = true;
+	muzzletimer.start(-1)
 	var coll = raycast.get_collider()
 	if raycast.is_colliding() and coll.has_method("take_damage"):
 		coll.take_damage(DAMAGE)
+
+func _on_muzzle_timeout():
+	muzzle.visible = false
