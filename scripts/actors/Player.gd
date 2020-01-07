@@ -5,6 +5,7 @@ extends KinematicBody2D
 # var b = "text"
 
 const MOVE_SPEED = 300
+var flashlight_toggle = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,6 +20,7 @@ func _physics_process(delta):
 	var look_vec = get_global_mouse_position() - global_position
 	var feet = get_child(0)
 	var body = get_child(1)
+	var flashlight = get_node("Body/Flashlight")
 	
 	if Input.is_action_pressed("move_up"):
 		move_vec.y -= 1
@@ -28,6 +30,13 @@ func _physics_process(delta):
 		move_vec.x -= 1
 	if Input.is_action_pressed("move_right"):
 		move_vec.x += 1
+	if Input.is_action_just_pressed("flashlight_toggle"):
+		flashlight_toggle = !flashlight_toggle
+		
+		if flashlight_toggle:
+			flashlight.visible = true;
+		else:
+			flashlight.visible = false;
 		
 #	move_vec = move_vec.normalized()
 	move_and_collide(move_vec * MOVE_SPEED * delta)

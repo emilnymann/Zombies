@@ -74,7 +74,7 @@ collision_mask = 4
 position = Vector2( 15.32, -10.31 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 13
+frame = 9
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
