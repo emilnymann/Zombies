@@ -436,7 +436,7 @@ offset = Vector2( 52.8, -13.19 )
 [node name="Body" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 4
+frame = 17
 playing = true
 offset = Vector2( 52.8, -13.19 )
 
@@ -448,6 +448,8 @@ offset = Vector2( 1305.2, -19.894 )
 color = Color( 0.921569, 0.811765, 0.54902, 1 )
 shadow_enabled = true
 shadow_gradient_length = 0.2
+shadow_filter = 5
+shadow_filter_smooth = 0.1
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 visible = false
