@@ -18,8 +18,8 @@ func _ready():
 func _physics_process(delta):
 	var move_vec = Vector2()
 	var look_vec = get_global_mouse_position() - global_position
-	var feet = get_child(0)
-	var body = get_child(1)
+	var feet = get_node("Feet")
+	var body = get_node("Body")
 	var flashlight = get_node("Body/Flashlight")
 	
 	if Input.is_action_pressed("move_up"):

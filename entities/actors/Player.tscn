@@ -436,15 +436,17 @@ offset = Vector2( 52.8, -13.19 )
 [node name="Body" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 4
+frame = 11
 playing = true
 offset = Vector2( 52.8, -13.19 )
 
 [node name="Flashlight" type="Light2D" parent="Body"]
-visible = false
-position = Vector2( 1424, 13.4393 )
+position = Vector2( 118.8, 33.3333 )
 texture = ExtResource( 312 )
+offset = Vector2( 1305.2, -19.894 )
 color = Color( 0.921569, 0.811765, 0.54902, 1 )
+shadow_enabled = true
+shadow_gradient_length = 0.2
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 visible = false
