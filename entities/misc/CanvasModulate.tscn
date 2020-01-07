@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scripts/misc/CanvasModulate.gd" type="Script" id=1]
+
+[node name="CanvasModulate" type="CanvasModulate"]
+visible = false
+color = Color( 0.231373, 0.254902, 0.298039, 1 )
+script = ExtResource( 1 )
