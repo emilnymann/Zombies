@@ -466,7 +466,6 @@ offset = Vector2( 52.8, -13.19 )
 [node name="Body" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 15
 playing = true
 offset = Vector2( 52.8, -13.19 )
 
@@ -483,7 +482,7 @@ shadow_filter_smooth = 0.1
 
 [node name="RayCastGun" type="RayCast2D" parent="Body"]
 enabled = true
-cast_to = Vector2( 2000, 0 )
+cast_to = Vector2( 6000, 0 )
 
 [node name="MuzzleFlash" type="Light2D" parent="Body"]
 editor/display_folded = true
