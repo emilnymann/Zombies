@@ -77,7 +77,7 @@ func fire():
 	muzzletimer.start(-1)
 	var coll = raycast.get_collider()
 	if raycast.is_colliding() and coll.has_method("take_damage"):
-		coll.take_damage(DAMAGE)
+		coll.take_damage(DAMAGE, raycast.get_collision_normal())
 
 func _on_muzzle_timeout():
 	muzzle.visible = false
