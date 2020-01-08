@@ -1,8 +1,6 @@
 extends KinematicBody2D
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var bullet_trace = load("res://entities/fx/BulletTrace.tscn")
 
 const MOVE_SPEED = 300
 const FIRE_RATE = 0.1 # time between each bullet
@@ -72,12 +70,20 @@ func _physics_process(delta):
 	camera.offset = ((( get_global_mouse_position() + global_position ) / 2 ) - global_position ) * 0.5
 		
 func fire():
+	var bullet_trace_instance = bullet_trace.instance()
 	muzzle.visible = true
-	muzzlefx.emitting = true;
+	muzzlefx.emitting = true
 	muzzletimer.start(-1)
 	var coll = raycast.get_collider()
-	if raycast.is_colliding() and coll.has_method("take_damage"):
-		coll.take_damage(DAMAGE, raycast.get_collision_normal())
+	bullet_trace_instance.set_point_position(0, muzzlefx.global_position)
+	if raycast.is_colliding():
+		bullet_trace_instance.set_point_position(1, raycast.get_collision_point())
+		if coll.has_method("take_damage"):
+			coll.take_damage(DAMAGE, raycast.get_collision_normal())
+	else:
+		bullet_trace_instance.set_point_position(1, ( get_global_mouse_position() - global_position ) * 10)
+	
+	get_parent().add_child(bullet_trace_instance)
 
 func _on_muzzle_timeout():
 	muzzle.visible = false
