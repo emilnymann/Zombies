@@ -15,6 +15,7 @@ onready var raycast = $Body/RayCastGun
 onready var camera = $Camera2D
 onready var muzzle = $Body/MuzzleFlash
 onready var muzzletimer = $Body/MuzzleFlash/Timer
+onready var muzzlefx = $Body/MuzzleFx
 onready var firetimer = $FirerateTimer
 onready var feet = $Feet
 onready var body = $Body
@@ -72,6 +73,7 @@ func _physics_process(delta):
 		
 func fire():
 	muzzle.visible = true
+	muzzlefx.emitting = true;
 	muzzletimer.start(-1)
 	var coll = raycast.get_collider()
 	if raycast.is_colliding() and coll.has_method("take_damage"):
@@ -79,6 +81,7 @@ func fire():
 
 func _on_muzzle_timeout():
 	muzzle.visible = false
+	muzzlefx.emitting = false;
 
 
 func _on_FirerateTimer_timeout():
