@@ -19,6 +19,11 @@ config/name="Zombies"
 run/main_scene="res://scenes/DevWorld.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+mouse_cursor/custom_image="res://assets/ui/hud/crosshair.png"
+mouse_cursor/custom_image_hotspot=Vector2( 16, 16 )
+
 [input]
 
 move_left={
