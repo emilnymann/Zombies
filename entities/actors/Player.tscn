@@ -465,11 +465,10 @@ playing = true
 offset = Vector2( 52.8, -13.19 )
 
 [node name="Body" type="AnimatedSprite" parent="."]
-editor/display_folded = true
 position = Vector2( 0, -36.1302 )
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 9
+frame = 6
 playing = true
 offset = Vector2( 52.8, -13.19 )
 
@@ -488,7 +487,6 @@ shadow_filter_smooth = 0.1
 position = Vector2( 217.364, 36.1302 )
 enabled = true
 cast_to = Vector2( 6000, 0 )
-collide_with_areas = true
 
 [node name="MuzzleFlash" type="Light2D" parent="Body"]
 editor/display_folded = true
