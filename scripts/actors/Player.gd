@@ -76,14 +76,10 @@ func fire():
 	muzzletimer.start(-1)
 	var coll = raycast.get_collider()
 	bullet_trace_instance.set_point_position(0, muzzlefx.global_position)
-	if raycast.is_colliding():
+	if raycast.is_colliding() and coll.has_method("take_damage"):
 		bullet_trace_instance.set_point_position(1, raycast.get_collision_point())
-		if coll.has_method("take_damage"):
-			coll.take_damage(DAMAGE, raycast.get_collision_normal())
-	else:
-		bullet_trace_instance.set_point_position(1, ( get_global_mouse_position() - global_position ) * 10)
-	
-	get_parent().add_child(bullet_trace_instance)
+		coll.take_damage(DAMAGE, raycast.get_collision_normal())
+		get_parent().add_child(bullet_trace_instance)
 
 func _on_muzzle_timeout():
 	muzzle.visible = false
