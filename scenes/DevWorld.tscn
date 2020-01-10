@@ -40,6 +40,7 @@ texture = ExtResource( 2 )
 shape = SubResource( 1 )
 
 [node name="Wall3" type="StaticBody2D" parent="."]
+editor/display_folded = true
 position = Vector2( -5.44067, 271.995 )
 rotation = -1.57079
 scale = Vector2( 1.12, 0.12 )
@@ -51,6 +52,7 @@ texture = ExtResource( 2 )
 shape = SubResource( 1 )
 
 [node name="Wall4" type="StaticBody2D" parent="."]
+editor/display_folded = true
 position = Vector2( 1077.66, 270.046 )
 rotation = -1.57079
 scale = Vector2( 1.12, 0.12 )
