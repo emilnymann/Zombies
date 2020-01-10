@@ -464,14 +464,14 @@ animation = "idle"
 playing = true
 
 [node name="Body" type="AnimatedSprite" parent="."]
-editor/display_folded = true
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 3
+frame = 10
 playing = true
 offset = Vector2( 50, -50 )
 
 [node name="Flashlight" type="Light2D" parent="Body"]
+visible = false
 position = Vector2( 1425.37, -21.0005 )
 texture = ExtResource( 312 )
 color = Color( 0.921569, 0.811765, 0.54902, 1 )
