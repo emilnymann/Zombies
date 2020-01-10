@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/fx/muzzle/muzzle_01.png" type="Texture" id=1]
+
+[node name="DevLightBlue" type="Light2D"]
+position = Vector2( 236.506, 861.274 )
+texture = ExtResource( 1 )
+color = Color( 0.623529, 0.67451, 0.815686, 1 )
+shadow_enabled = true
+shadow_filter = 5
+shadow_filter_smooth = 0.1
