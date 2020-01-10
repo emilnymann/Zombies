@@ -466,11 +466,12 @@ playing = true
 [node name="Body" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 12
+frame = 7
 playing = true
 offset = Vector2( 50, -50 )
 
 [node name="Flashlight" type="Light2D" parent="Body"]
+visible = false
 position = Vector2( 196.667, 0 )
 texture = ExtResource( 312 )
 offset = Vector2( 1233.54, -21.9 )
