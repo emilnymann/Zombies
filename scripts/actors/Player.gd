@@ -55,8 +55,7 @@ func _physics_process(delta):
 			
 		
 	move_and_collide(move_vec * MOVE_SPEED * delta)
-	body.global_rotation = atan2(look_vec.y, look_vec.x)
-	feet.global_rotation = atan2(move_vec.y, move_vec.x)
+	global_rotation = atan2(look_vec.y, look_vec.x)
 	
 	if move_vec == Vector2(0, 0):
 		body.play("idle_rifle")
