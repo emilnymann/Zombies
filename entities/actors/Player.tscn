@@ -466,14 +466,14 @@ playing = true
 [node name="Body" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 18
+frame = 12
 playing = true
 offset = Vector2( 50, -50 )
 
 [node name="Flashlight" type="Light2D" parent="Body"]
-visible = false
-position = Vector2( 1425.37, -21.0005 )
+position = Vector2( 196.667, 0 )
 texture = ExtResource( 312 )
+offset = Vector2( 1233.54, -21.9 )
 color = Color( 0.921569, 0.811765, 0.54902, 1 )
 shadow_enabled = true
 shadow_gradient_length = 0.2
