@@ -70,7 +70,9 @@ animations = [ {
 [sub_resource type="CircleShape2D" id=3]
 radius = 75.0
 
-[node name="Zombie" type="KinematicBody2D"]
+[node name="Zombie" type="KinematicBody2D" groups=[
+"zombie",
+]]
 scale = Vector2( 0.3, 0.3 )
 script = ExtResource( 1 )
 
@@ -82,7 +84,7 @@ occluder = SubResource( 1 )
 position = Vector2( 15.32, -10.31 )
 frames = SubResource( 2 )
 animation = "idle"
-frame = 7
+frame = 13
 playing = true
 
 [node name="Collision" type="CollisionShape2D" parent="."]

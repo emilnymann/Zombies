@@ -5,27 +5,38 @@ var health = 100
 onready var blood = load("res://entities/fx/BloodSpatter.tscn")
 onready var body = $Body
 
+var nav2d
+var player
 var path : = PoolVector2Array()
+var is_active = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
 	
 func _process(delta):
-	var distance_to_walk = MOVE_SPEED * delta
+	if is_active:
+		var distance_to_walk = MOVE_SPEED * delta
 	
-	while distance_to_walk > 0 and path.size() > 0:
-		var distance_to_next_point = position.distance_to(path[0])
-		if distance_to_walk <= distance_to_next_point:
-			position += position.direction_to(path[0]) * distance_to_walk
-		else:
-			position = path[0]
-			path.remove(0)
-		distance_to_walk -= distance_to_next_point
+		while distance_to_walk > 0 and path.size() > 0:
+			var distance_to_next_point = position.distance_to(path[0])
+			if distance_to_walk <= distance_to_next_point:
+				position += position.direction_to(path[0]) * distance_to_walk
+			else:
+				position = path[0]
+				path.remove(0)
+			
+			distance_to_walk -= distance_to_next_point
 
 func _physics_process(delta):
 	if health <= 0:
 		kill()
+		
+func set_player(p):
+	player = p
+	
+func set_nav(n):
+	nav2d = n
 
 func take_damage(amount, direction):
 	print("Took " + str(amount) + " damage!")
@@ -38,3 +49,8 @@ func take_damage(amount, direction):
 func kill():
 	print("Died!")
 	queue_free()
+
+func _on_PathfindingTimer_timeout():
+	if is_active:
+		var new_path = nav2d.get_simple_path(global_position, player.global_position)
+		path = new_path
