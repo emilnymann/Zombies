@@ -1,9 +1,12 @@
 extends KinematicBody2D
 
 const MOVE_SPEED = 200
+const DAMAGE = 10
 var health = 100
 onready var blood = load("res://entities/fx/BloodSpatter.tscn")
 onready var body = $Body
+onready var raycast = $AttackRaycast
+onready var attack_timer = $AttackTimer
 
 var nav2d
 var player
@@ -11,6 +14,7 @@ var timer
 var path : = PoolVector2Array()
 var is_active = true
 var is_moving = false
+var is_attacking = false
 var move_dir = global_rotation
 
 # Called when the node enters the scene tree for the first time.
@@ -20,12 +24,26 @@ func _ready():
 	timer = get_parent().get_node("PathfindingTimer")
 	
 	timer.connect("timeout", self, "_on_PathfindingTimer_timeout")
+	attack_timer.connect("timeout", self, "_on_AttackTimer_timeout")
 	
 func _process(delta):
+	pass
+
+func _physics_process(delta):
+	if health <= 0:
+		kill()
+		
 	if is_active:
+		var coll = raycast.get_collider()
 		var distance_to_walk = MOVE_SPEED * delta
+		
+		if raycast.is_colliding() and coll.has_method("take_damage") and !is_attacking:
+			is_attacking = true
+			is_moving = false
+			coll.take_damage(DAMAGE, raycast.get_collision_normal())
+			attack_timer.start(0.5)
 	
-		while distance_to_walk > 0 and path.size() > 0:
+		while distance_to_walk > 0 and path.size() > 0 and !is_attacking:
 			is_moving = true
 			var distance_to_next_point = position.distance_to(path[0])
 			if distance_to_walk <= distance_to_next_point:
@@ -42,12 +60,10 @@ func _process(delta):
 		if is_moving:
 			global_rotation = lerp(global_rotation, move_dir, 0.75)
 			body.play("move")
+		elif is_attacking:
+			body.play("attack")
 		else:
 			body.play("idle")
-
-func _physics_process(delta):
-	if health <= 0:
-		kill()
 	
 func set_player(p):
 	player = p
@@ -56,7 +72,7 @@ func set_nav(n):
 	nav2d = n
 
 func take_damage(amount, direction):
-	print("Took " + str(amount) + " damage!")
+	print("Zombie took " + str(amount) + " damage!")
 	var blood_instance = blood.instance()
 	blood_instance.global_position = body.global_position
 	blood_instance.global_rotation = ( direction * -1 ).angle()
@@ -71,3 +87,6 @@ func _on_PathfindingTimer_timeout():
 	if is_active:
 		var new_path = nav2d.get_simple_path(global_position, player.global_position)
 		path = new_path
+		
+func _on_AttackTimer_timeout():
+	is_attacking = false

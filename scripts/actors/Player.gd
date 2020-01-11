@@ -5,10 +5,11 @@ var bullet_trace = load("res://entities/fx/BulletTrace.tscn")
 const MOVE_SPEED = 300
 const FIRE_RATE = 0.1 # time between each bullet
 const DAMAGE = 20
+var health = 100
 var fire_ready = true
 var flashlight_toggle = false # is flashlight on or off?
 
-
+onready var blood = load("res://entities/fx/BloodSpatter.tscn")
 onready var raycast = $Body/RayCastGun
 onready var camera = $Camera2D
 onready var muzzle = $Body/MuzzleFlash
@@ -29,6 +30,9 @@ func _physics_process(delta):
 	var move_vec = Vector2()
 	var look_vec = get_global_mouse_position() - global_position
 	var flashlight = get_node("Body/Flashlight")
+	
+	if health <= 0:
+		kill()
 	
 	if Input.is_action_pressed("move_up"):
 		move_vec.y -= 1
@@ -85,6 +89,17 @@ func fire():
 		var diff = ((get_global_mouse_position() - global_position) * 4) + global_position # convert global to local, apply scalar and convert back to global
 		bullet_trace_instance.set_point_position(1, diff)
 		get_parent().add_child(bullet_trace_instance)
+		
+func take_damage(amount, direction):
+	print("Player took " + str(amount) + " damage!")
+	var blood_instance = blood.instance()
+	blood_instance.global_position = body.global_position
+	blood_instance.global_rotation = ( direction * -1 ).angle()
+	get_parent().add_child(blood_instance)
+	health = health - amount
+	
+func kill():
+	print("You died!")
 
 func _on_muzzle_timeout():
 	muzzle.visible = false
