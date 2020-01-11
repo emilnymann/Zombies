@@ -35,11 +35,15 @@ func _process(delta):
 			else:
 				position = path[0]
 				path.remove(0)
+				is_moving = false
 			
 			distance_to_walk -= distance_to_next_point
 			
 		if is_moving:
 			global_rotation = lerp(global_rotation, move_dir, 0.75)
+			body.play("move")
+		else:
+			body.play("idle")
 
 func _physics_process(delta):
 	if health <= 0:
