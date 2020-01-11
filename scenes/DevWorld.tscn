@@ -644,13 +644,4 @@ wait_time = 0.5
 autostart = true
 
 [node name="Zombie" parent="." instance=ExtResource( 6 )]
-position = Vector2( 445.955, 327.778 )
-
-[node name="Zombie2" parent="." instance=ExtResource( 6 )]
-position = Vector2( 2020.79, 490.953 )
-
-[node name="Zombie3" parent="." instance=ExtResource( 6 )]
-position = Vector2( 332.112, 1485.19 )
-
-[node name="Zombie4" parent="." instance=ExtResource( 6 )]
-position = Vector2( 1591.98, 1295.45 )
+position = Vector2( 574.72, 393.958 )
