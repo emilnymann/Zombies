@@ -81,6 +81,10 @@ func fire():
 		
 		if coll.has_method("take_damage"):
 			coll.take_damage(DAMAGE, raycast.get_collision_normal())
+	else:
+		var diff = ((get_global_mouse_position() - global_position) * 4) + global_position # convert global to local, apply scalar and convert back to global
+		bullet_trace_instance.set_point_position(1, diff)
+		get_parent().add_child(bullet_trace_instance)
 
 func _on_muzzle_timeout():
 	muzzle.visible = false
