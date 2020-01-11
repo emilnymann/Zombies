@@ -11,19 +11,18 @@ onready var attack_timer = $AttackTimer
 var nav2d
 var player
 var timer
+var trigger
 var path : = PoolVector2Array()
-var is_active = true
+var is_active = false
 var is_moving = false
 var is_attacking = false
 var move_dir = global_rotation
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	player = get_parent().get_node("Player")
-	nav2d = get_parent().get_node("Navigation2D")
-	timer = get_parent().get_node("PathfindingTimer")
-	
-	timer.connect("timeout", self, "_on_PathfindingTimer_timeout")
+#	player = get_parent().get_node("Player")
+#	nav2d = get_parent().get_node("Navigation2D")
+#	timer = get_parent().get_node("PathfindingTimer")
 	attack_timer.connect("timeout", self, "_on_AttackTimer_timeout")
 	
 func _process(delta):
@@ -71,6 +70,10 @@ func set_player(p):
 func set_nav(n):
 	nav2d = n
 
+func set_pathfinding_timer(pft):
+	timer = pft
+	timer.connect("timeout", self, "_on_PathfindingTimer_timeout")
+
 func take_damage(amount, direction):
 	print("Zombie took " + str(amount) + " damage!")
 	var blood_instance = blood.instance()
@@ -82,6 +85,9 @@ func take_damage(amount, direction):
 func kill():
 	print("Died!")
 	queue_free()
+	
+func activate():
+	is_active = true
 
 func _on_PathfindingTimer_timeout():
 	if is_active:
