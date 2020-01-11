@@ -7,12 +7,17 @@ onready var body = $Body
 
 var nav2d
 var player
+var timer
 var path : = PoolVector2Array()
 var is_active = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	player = get_parent().get_node("Player")
+	nav2d = get_parent().get_node("Navigation2D")
+	timer = get_parent().get_node("PathfindingTimer")
+	
+	timer.connect("timeout", self, "_on_PathfindingTimer_timeout")
 	
 func _process(delta):
 	if is_active:
