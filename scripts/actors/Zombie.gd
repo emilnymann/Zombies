@@ -36,7 +36,7 @@ func _physics_process(delta):
 		var coll = raycast.get_collider()
 		var distance_to_walk = MOVE_SPEED * delta
 		
-		if raycast.is_colliding() and coll.has_method("take_damage") and !is_attacking:
+		if raycast.is_colliding() and coll.has_method("take_damage") and coll.name == "Player" and !is_attacking:
 			is_attacking = true
 			is_moving = false
 			coll.take_damage(DAMAGE, raycast.get_collision_normal())
