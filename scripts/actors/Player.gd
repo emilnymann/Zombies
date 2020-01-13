@@ -5,7 +5,8 @@ var bullet_trace = load("res://entities/fx/BulletTrace.tscn")
 const MOVE_SPEED = 300
 const FIRE_RATE = 0.1 # time between each bullet
 const DAMAGE = 20
-var health = 100
+var max_health = 100
+var health = max_health
 var fire_ready = true
 var flashlight_toggle = false # is flashlight on or off?
 
@@ -17,6 +18,8 @@ onready var muzzlefx = $Body/MuzzleFx
 onready var firetimer = $FirerateTimer
 onready var feet = $Feet
 onready var body = $Body
+
+signal health_changed
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -92,6 +95,7 @@ func take_damage(amount, direction):
 	blood_instance.global_position = body.global_position
 	blood_instance.global_rotation = ( direction * -1 ).angle()
 	get_parent().add_child(blood_instance)
+	emit_signal("health_changed")
 	health = health - amount
 	
 func kill():
