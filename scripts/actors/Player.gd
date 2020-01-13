@@ -11,7 +11,6 @@ var flashlight_toggle = false # is flashlight on or off?
 
 onready var blood = load("res://entities/fx/BloodSpatter.tscn")
 onready var raycast = $Body/RayCastGun
-onready var camera = $Camera2D
 onready var muzzle = $Body/MuzzleFlash
 onready var muzzletimer = $Body/MuzzleFlash/Timer
 onready var muzzlefx = $Body/MuzzleFx
@@ -68,9 +67,6 @@ func _physics_process(delta):
 	else:
 		body.play("move_rifle")
 		feet.play("walk")
-	
-	# smooth camera between player position and mouse position * strength factor
-	camera.offset = ((( get_global_mouse_position() + global_position ) / 2 ) - global_position ) * 0.5
 		
 func fire():
 	var bullet_trace_instance = bullet_trace.instance()

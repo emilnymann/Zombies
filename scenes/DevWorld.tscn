@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://scripts/misc/Global.gd" type="Script" id=1]
 [ext_resource path="res://entities/actors/Player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://entities/dev/DevLightBlue.tscn" type="PackedScene" id=4]
 [ext_resource path="res://assets/world/tiles/tileset_01.png" type="Texture" id=5]
 [ext_resource path="res://entities/misc/CanvasModulate.tscn" type="PackedScene" id=6]
+[ext_resource path="res://entities/misc/PlayerCamera.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 47.5277, 148.556 )
@@ -586,6 +587,16 @@ position = Vector2( 523.592, 1438.2 )
 ] instance=ExtResource( 3 )]
 position = Vector2( 574.72, 393.958 )
 
+[node name="Zombie2" parent="." groups=[
+"dev_world_zombie",
+] instance=ExtResource( 3 )]
+position = Vector2( 477.087, 706.384 )
+
+[node name="Zombie3" parent="." groups=[
+"dev_world_zombie",
+] instance=ExtResource( 3 )]
+position = Vector2( 954.094, 170.797 )
+
 [node name="ZombieTrigger" type="Area2D" parent="."]
 editor/display_folded = true
 
@@ -665,4 +676,7 @@ autostart = true
 
 [node name="CanvasModulate" parent="." instance=ExtResource( 6 )]
 color = Color( 0.054902, 0.0588235, 0.0627451, 1 )
+
+[node name="PlayerCamera" parent="." instance=ExtResource( 7 )]
+position = Vector2( 523.592, 1438.2 )
 [connection signal="body_entered" from="ZombieTrigger" to="." method="_on_ZombieTrigger_body_entered"]

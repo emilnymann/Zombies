@@ -4,6 +4,7 @@ onready var player = $Player
 onready var nav2d = $Navigation2D
 onready var timer = $PathfindingTimer
 onready var trigger = $ZombieTrigger
+onready var camera = $PlayerCamera
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -11,9 +12,9 @@ func _ready():
 	get_tree().call_group("zombie", "set_player", player)
 	get_tree().call_group("zombie", "set_nav", nav2d)
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	# camera follows player
+	camera.global_position = player.global_position
 
 
 func _on_ZombieTrigger_body_entered(body):
