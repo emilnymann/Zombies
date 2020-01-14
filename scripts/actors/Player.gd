@@ -68,7 +68,7 @@ func _physics_process(delta):
 			fire()
 			
 	if Input.is_action_just_pressed("reload"):
-		if !is_reloading:
+		if !is_reloading && ammo < max_ammo:
 			reload()
 			
 		
