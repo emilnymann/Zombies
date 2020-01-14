@@ -17,6 +17,9 @@ var is_firing = false
 var is_reloading = false
 
 onready var blood = load("res://entities/fx/BloodSpatter.tscn")
+onready var fire_audio = $Audio/Fire
+onready var reloadstart_audio = $Audio/ReloadStart
+onready var reloadend_audio = $Audio/ReloadEnd
 onready var raycast = $Body/RayCastGun
 onready var muzzle = $Body/MuzzleFlash
 onready var muzzletimer = $Body/MuzzleFlash/Timer
@@ -95,6 +98,7 @@ func fire():
 	is_firing = true
 	ammo -= 1
 	emit_signal("ammo_changed")
+	fire_audio.play()
 	var bullet_trace_instance = bullet_trace.instance()
 	muzzle.visible = true
 	muzzlefx.emitting = true
@@ -113,6 +117,7 @@ func fire():
 		get_parent().add_child(bullet_trace_instance)
 		
 func reload():
+	reloadstart_audio.play()
 	reloadtimer.start(-1)
 	is_reloading = true
 	body.play("reload_rifle")
@@ -138,6 +143,7 @@ func _on_FirerateTimer_timeout():
 	fire_ready = true
 
 func _on_ReloadTimer_timeout():
+	reloadend_audio.play()
 	ammo = max_ammo
 	emit_signal("ammo_changed")
 	is_reloading = false

@@ -1,4 +1,4 @@
-[gd_scene load_steps=323 format=2]
+[gd_scene load_steps=326 format=2]
 
 [ext_resource path="res://scripts/actors/Player.gd" type="Script" id=1]
 [ext_resource path="res://assets/actors/player/feet/idle/survivor-idle_0.png" type="Texture" id=2]
@@ -316,6 +316,9 @@
 [ext_resource path="res://assets/fx/muzzle/muzzle_fx_01.png" type="Texture" id=314]
 [ext_resource path="res://assets/fx/muzzle/muzzle_fx_02.png" type="Texture" id=315]
 [ext_resource path="res://assets/fx/muzzle/muzzle_fx_03.png" type="Texture" id=316]
+[ext_resource path="res://assets/sfx/gun/single_fire.wav" type="AudioStream" id=317]
+[ext_resource path="res://assets/sfx/gun/outofammo.wav" type="AudioStream" id=318]
+[ext_resource path="res://assets/sfx/gun/weapload.wav" type="AudioStream" id=319]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -469,7 +472,7 @@ playing = true
 [node name="Body" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 11
+frame = 6
 playing = true
 offset = Vector2( 50, -50 )
 
@@ -521,7 +524,19 @@ wait_time = 0.1
 one_shot = true
 
 [node name="ReloadTimer" type="Timer" parent="."]
+wait_time = 0.5
 one_shot = true
+
+[node name="Audio" type="Node2D" parent="."]
+
+[node name="Fire" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource( 317 )
+
+[node name="ReloadStart" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource( 318 )
+
+[node name="ReloadEnd" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource( 319 )
 [connection signal="timeout" from="Body/MuzzleFlash/Timer" to="." method="_on_muzzle_timeout"]
 [connection signal="timeout" from="FirerateTimer" to="." method="_on_FirerateTimer_timeout"]
 [connection signal="timeout" from="ReloadTimer" to="." method="_on_ReloadTimer_timeout"]
