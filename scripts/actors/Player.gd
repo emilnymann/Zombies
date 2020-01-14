@@ -97,7 +97,6 @@ func _physics_process(delta):
 func fire():
 	is_firing = true
 	ammo -= 1
-	emit_signal("ammo_changed")
 	fire_audio.play()
 	var bullet_trace_instance = bullet_trace.instance()
 	muzzle.visible = true
@@ -116,6 +115,8 @@ func fire():
 		bullet_trace_instance.set_point_position(1, diff)
 		get_parent().add_child(bullet_trace_instance)
 		
+	emit_signal("ammo_changed")
+	
 func reload():
 	reloadstart_audio.play()
 	reloadtimer.start(-1)
@@ -128,8 +129,8 @@ func take_damage(amount, direction):
 	blood_instance.global_position = body.global_position
 	blood_instance.global_rotation = ( direction * -1 ).angle()
 	get_parent().add_child(blood_instance)
-	emit_signal("health_changed")
 	health = health - amount
+	emit_signal("health_changed")
 	
 func kill():
 	print("You died!")
