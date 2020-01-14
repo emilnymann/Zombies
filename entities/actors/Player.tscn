@@ -468,7 +468,7 @@ playing = true
 [node name="Body" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 16
+frame = 1
 playing = true
 offset = Vector2( 50, -50 )
 

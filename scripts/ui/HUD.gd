@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-onready var health_counter = $MarginContainer/HpContainer/HpCounter
+onready var health_counter = $Health/HpContainer/HpCounter
 
 var player
 
@@ -11,4 +11,16 @@ func _ready():
 	player.connect("health_changed", self, "_on_Player_health_changed")
 
 func _on_Player_health_changed():
-	health_counter.text = str(player.health)
+	var hp = player.health
+	var max_hp = player.max_health
+	var hp_color
+	
+	if hp >= 80:
+		hp_color = Color("26a01f")
+	elif hp >= 40:
+		hp_color = Color("d9da27")
+	else:
+		hp_color = Color("b91f1f")
+	
+	health_counter.text = str(hp)
+	health_counter.set("custom_colors/font_color", hp_color)
