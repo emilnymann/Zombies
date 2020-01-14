@@ -42,46 +42,46 @@
 [ext_resource path="res://assets/actors/player/feet/strafe_left/survivor-strafe_left_17.png" type="Texture" id=40]
 [ext_resource path="res://assets/actors/player/feet/strafe_left/survivor-strafe_left_18.png" type="Texture" id=41]
 [ext_resource path="res://assets/actors/player/feet/strafe_left/survivor-strafe_left_19.png" type="Texture" id=42]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_0.png" type="Texture" id=43]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_1.png" type="Texture" id=44]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_2.png" type="Texture" id=45]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_3.png" type="Texture" id=46]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_4.png" type="Texture" id=47]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_5.png" type="Texture" id=48]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_6.png" type="Texture" id=49]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_7.png" type="Texture" id=50]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_8.png" type="Texture" id=51]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_9.png" type="Texture" id=52]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_10.png" type="Texture" id=53]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_11.png" type="Texture" id=54]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_12.png" type="Texture" id=55]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_13.png" type="Texture" id=56]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_14.png" type="Texture" id=57]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_15.png" type="Texture" id=58]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_16.png" type="Texture" id=59]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_17.png" type="Texture" id=60]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_18.png" type="Texture" id=61]
-[ext_resource path="res://assets/actors/player/feet/run/survivor-run_19.png" type="Texture" id=62]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_0.png" type="Texture" id=63]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_1.png" type="Texture" id=64]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_2.png" type="Texture" id=65]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_3.png" type="Texture" id=66]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_4.png" type="Texture" id=67]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_5.png" type="Texture" id=68]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_6.png" type="Texture" id=69]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_7.png" type="Texture" id=70]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_8.png" type="Texture" id=71]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_9.png" type="Texture" id=72]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_10.png" type="Texture" id=73]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_11.png" type="Texture" id=74]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_12.png" type="Texture" id=75]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_13.png" type="Texture" id=76]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_14.png" type="Texture" id=77]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_15.png" type="Texture" id=78]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_16.png" type="Texture" id=79]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_17.png" type="Texture" id=80]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_18.png" type="Texture" id=81]
-[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_19.png" type="Texture" id=82]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_0.png" type="Texture" id=43]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_1.png" type="Texture" id=44]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_2.png" type="Texture" id=45]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_3.png" type="Texture" id=46]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_4.png" type="Texture" id=47]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_5.png" type="Texture" id=48]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_6.png" type="Texture" id=49]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_7.png" type="Texture" id=50]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_8.png" type="Texture" id=51]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_9.png" type="Texture" id=52]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_10.png" type="Texture" id=53]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_11.png" type="Texture" id=54]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_12.png" type="Texture" id=55]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_13.png" type="Texture" id=56]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_14.png" type="Texture" id=57]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_15.png" type="Texture" id=58]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_16.png" type="Texture" id=59]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_17.png" type="Texture" id=60]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_18.png" type="Texture" id=61]
+[ext_resource path="res://assets/actors/player/feet/walk/survivor-walk_19.png" type="Texture" id=62]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_0.png" type="Texture" id=63]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_1.png" type="Texture" id=64]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_2.png" type="Texture" id=65]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_3.png" type="Texture" id=66]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_4.png" type="Texture" id=67]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_5.png" type="Texture" id=68]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_6.png" type="Texture" id=69]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_7.png" type="Texture" id=70]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_8.png" type="Texture" id=71]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_9.png" type="Texture" id=72]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_10.png" type="Texture" id=73]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_11.png" type="Texture" id=74]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_12.png" type="Texture" id=75]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_13.png" type="Texture" id=76]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_14.png" type="Texture" id=77]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_15.png" type="Texture" id=78]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_16.png" type="Texture" id=79]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_17.png" type="Texture" id=80]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_18.png" type="Texture" id=81]
+[ext_resource path="res://assets/actors/player/feet/run/survivor-run_19.png" type="Texture" id=82]
 [ext_resource path="res://assets/actors/player/body/rifle/meleeattack/survivor-meleeattack_rifle_0.png" type="Texture" id=83]
 [ext_resource path="res://assets/actors/player/body/rifle/meleeattack/survivor-meleeattack_rifle_1.png" type="Texture" id=84]
 [ext_resource path="res://assets/actors/player/body/rifle/meleeattack/survivor-meleeattack_rifle_2.png" type="Texture" id=85]
@@ -155,162 +155,162 @@
 [ext_resource path="res://assets/actors/player/body/handgun/reload/survivor-reload_handgun_12.png" type="Texture" id=153]
 [ext_resource path="res://assets/actors/player/body/handgun/reload/survivor-reload_handgun_13.png" type="Texture" id=154]
 [ext_resource path="res://assets/actors/player/body/handgun/reload/survivor-reload_handgun_14.png" type="Texture" id=155]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_0.png" type="Texture" id=156]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_1.png" type="Texture" id=157]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_2.png" type="Texture" id=158]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_3.png" type="Texture" id=159]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_4.png" type="Texture" id=160]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_5.png" type="Texture" id=161]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_6.png" type="Texture" id=162]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_7.png" type="Texture" id=163]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_8.png" type="Texture" id=164]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_9.png" type="Texture" id=165]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_10.png" type="Texture" id=166]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_11.png" type="Texture" id=167]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_12.png" type="Texture" id=168]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_13.png" type="Texture" id=169]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_14.png" type="Texture" id=170]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_15.png" type="Texture" id=171]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_16.png" type="Texture" id=172]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_17.png" type="Texture" id=173]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_18.png" type="Texture" id=174]
-[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_19.png" type="Texture" id=175]
-[ext_resource path="res://assets/actors/player/body/shotgun/shoot/survivor-shoot_shotgun_0.png" type="Texture" id=176]
-[ext_resource path="res://assets/actors/player/body/shotgun/shoot/survivor-shoot_shotgun_1.png" type="Texture" id=177]
-[ext_resource path="res://assets/actors/player/body/shotgun/shoot/survivor-shoot_shotgun_2.png" type="Texture" id=178]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_0.png" type="Texture" id=179]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_1.png" type="Texture" id=180]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_2.png" type="Texture" id=181]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_3.png" type="Texture" id=182]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_4.png" type="Texture" id=183]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_5.png" type="Texture" id=184]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_6.png" type="Texture" id=185]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_7.png" type="Texture" id=186]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_8.png" type="Texture" id=187]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_9.png" type="Texture" id=188]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_10.png" type="Texture" id=189]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_11.png" type="Texture" id=190]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_12.png" type="Texture" id=191]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_13.png" type="Texture" id=192]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_14.png" type="Texture" id=193]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_15.png" type="Texture" id=194]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_16.png" type="Texture" id=195]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_17.png" type="Texture" id=196]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_18.png" type="Texture" id=197]
-[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_19.png" type="Texture" id=198]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_0.png" type="Texture" id=199]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_1.png" type="Texture" id=200]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_2.png" type="Texture" id=201]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_3.png" type="Texture" id=202]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_4.png" type="Texture" id=203]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_5.png" type="Texture" id=204]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_6.png" type="Texture" id=205]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_7.png" type="Texture" id=206]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_8.png" type="Texture" id=207]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_9.png" type="Texture" id=208]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_10.png" type="Texture" id=209]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_11.png" type="Texture" id=210]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_12.png" type="Texture" id=211]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_13.png" type="Texture" id=212]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_14.png" type="Texture" id=213]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_15.png" type="Texture" id=214]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_16.png" type="Texture" id=215]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_17.png" type="Texture" id=216]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_18.png" type="Texture" id=217]
-[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_19.png" type="Texture" id=218]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_0.png" type="Texture" id=219]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_1.png" type="Texture" id=220]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_2.png" type="Texture" id=221]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_3.png" type="Texture" id=222]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_4.png" type="Texture" id=223]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_5.png" type="Texture" id=224]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_6.png" type="Texture" id=225]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_7.png" type="Texture" id=226]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_8.png" type="Texture" id=227]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_9.png" type="Texture" id=228]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_10.png" type="Texture" id=229]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_11.png" type="Texture" id=230]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_12.png" type="Texture" id=231]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_13.png" type="Texture" id=232]
-[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_14.png" type="Texture" id=233]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_0.png" type="Texture" id=234]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_1.png" type="Texture" id=235]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_2.png" type="Texture" id=236]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_3.png" type="Texture" id=237]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_4.png" type="Texture" id=238]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_5.png" type="Texture" id=239]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_6.png" type="Texture" id=240]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_7.png" type="Texture" id=241]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_8.png" type="Texture" id=242]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_9.png" type="Texture" id=243]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_10.png" type="Texture" id=244]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_11.png" type="Texture" id=245]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_12.png" type="Texture" id=246]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_13.png" type="Texture" id=247]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_14.png" type="Texture" id=248]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_15.png" type="Texture" id=249]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_16.png" type="Texture" id=250]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_17.png" type="Texture" id=251]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_18.png" type="Texture" id=252]
-[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_19.png" type="Texture" id=253]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_0.png" type="Texture" id=254]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_1.png" type="Texture" id=255]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_2.png" type="Texture" id=256]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_3.png" type="Texture" id=257]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_4.png" type="Texture" id=258]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_5.png" type="Texture" id=259]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_6.png" type="Texture" id=260]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_7.png" type="Texture" id=261]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_8.png" type="Texture" id=262]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_9.png" type="Texture" id=263]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_10.png" type="Texture" id=264]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_11.png" type="Texture" id=265]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_12.png" type="Texture" id=266]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_13.png" type="Texture" id=267]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_14.png" type="Texture" id=268]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_15.png" type="Texture" id=269]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_16.png" type="Texture" id=270]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_17.png" type="Texture" id=271]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_18.png" type="Texture" id=272]
-[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_19.png" type="Texture" id=273]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_0.png" type="Texture" id=274]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_1.png" type="Texture" id=275]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_2.png" type="Texture" id=276]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_3.png" type="Texture" id=277]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_4.png" type="Texture" id=278]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_5.png" type="Texture" id=279]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_6.png" type="Texture" id=280]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_7.png" type="Texture" id=281]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_8.png" type="Texture" id=282]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_9.png" type="Texture" id=283]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_10.png" type="Texture" id=284]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_11.png" type="Texture" id=285]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_12.png" type="Texture" id=286]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_13.png" type="Texture" id=287]
-[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_14.png" type="Texture" id=288]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_0.png" type="Texture" id=289]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_1.png" type="Texture" id=290]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_2.png" type="Texture" id=291]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_3.png" type="Texture" id=292]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_4.png" type="Texture" id=293]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_5.png" type="Texture" id=294]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_6.png" type="Texture" id=295]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_7.png" type="Texture" id=296]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_8.png" type="Texture" id=297]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_9.png" type="Texture" id=298]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_10.png" type="Texture" id=299]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_11.png" type="Texture" id=300]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_12.png" type="Texture" id=301]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_13.png" type="Texture" id=302]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_14.png" type="Texture" id=303]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_15.png" type="Texture" id=304]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_16.png" type="Texture" id=305]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_17.png" type="Texture" id=306]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_18.png" type="Texture" id=307]
-[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_19.png" type="Texture" id=308]
-[ext_resource path="res://assets/actors/player/body/handgun/shoot/survivor-shoot_handgun_0.png" type="Texture" id=309]
-[ext_resource path="res://assets/actors/player/body/handgun/shoot/survivor-shoot_handgun_1.png" type="Texture" id=310]
-[ext_resource path="res://assets/actors/player/body/handgun/shoot/survivor-shoot_handgun_2.png" type="Texture" id=311]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_0.png" type="Texture" id=156]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_1.png" type="Texture" id=157]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_2.png" type="Texture" id=158]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_3.png" type="Texture" id=159]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_4.png" type="Texture" id=160]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_5.png" type="Texture" id=161]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_6.png" type="Texture" id=162]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_7.png" type="Texture" id=163]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_8.png" type="Texture" id=164]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_9.png" type="Texture" id=165]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_10.png" type="Texture" id=166]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_11.png" type="Texture" id=167]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_12.png" type="Texture" id=168]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_13.png" type="Texture" id=169]
+[ext_resource path="res://assets/actors/player/body/shotgun/meleeattack/survivor-meleeattack_shotgun_14.png" type="Texture" id=170]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_0.png" type="Texture" id=171]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_1.png" type="Texture" id=172]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_2.png" type="Texture" id=173]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_3.png" type="Texture" id=174]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_4.png" type="Texture" id=175]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_5.png" type="Texture" id=176]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_6.png" type="Texture" id=177]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_7.png" type="Texture" id=178]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_8.png" type="Texture" id=179]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_9.png" type="Texture" id=180]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_10.png" type="Texture" id=181]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_11.png" type="Texture" id=182]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_12.png" type="Texture" id=183]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_13.png" type="Texture" id=184]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_14.png" type="Texture" id=185]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_15.png" type="Texture" id=186]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_16.png" type="Texture" id=187]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_17.png" type="Texture" id=188]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_18.png" type="Texture" id=189]
+[ext_resource path="res://assets/actors/player/body/shotgun/idle/survivor-idle_shotgun_19.png" type="Texture" id=190]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_0.png" type="Texture" id=191]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_1.png" type="Texture" id=192]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_2.png" type="Texture" id=193]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_3.png" type="Texture" id=194]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_4.png" type="Texture" id=195]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_5.png" type="Texture" id=196]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_6.png" type="Texture" id=197]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_7.png" type="Texture" id=198]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_8.png" type="Texture" id=199]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_9.png" type="Texture" id=200]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_10.png" type="Texture" id=201]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_11.png" type="Texture" id=202]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_12.png" type="Texture" id=203]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_13.png" type="Texture" id=204]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_14.png" type="Texture" id=205]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_15.png" type="Texture" id=206]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_16.png" type="Texture" id=207]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_17.png" type="Texture" id=208]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_18.png" type="Texture" id=209]
+[ext_resource path="res://assets/actors/player/body/rifle/reload/survivor-reload_rifle_19.png" type="Texture" id=210]
+[ext_resource path="res://assets/actors/player/body/shotgun/shoot/survivor-shoot_shotgun_0.png" type="Texture" id=211]
+[ext_resource path="res://assets/actors/player/body/shotgun/shoot/survivor-shoot_shotgun_1.png" type="Texture" id=212]
+[ext_resource path="res://assets/actors/player/body/shotgun/shoot/survivor-shoot_shotgun_2.png" type="Texture" id=213]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_0.png" type="Texture" id=214]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_1.png" type="Texture" id=215]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_2.png" type="Texture" id=216]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_3.png" type="Texture" id=217]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_4.png" type="Texture" id=218]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_5.png" type="Texture" id=219]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_6.png" type="Texture" id=220]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_7.png" type="Texture" id=221]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_8.png" type="Texture" id=222]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_9.png" type="Texture" id=223]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_10.png" type="Texture" id=224]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_11.png" type="Texture" id=225]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_12.png" type="Texture" id=226]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_13.png" type="Texture" id=227]
+[ext_resource path="res://assets/actors/player/body/handgun/meleeattack/survivor-meleeattack_handgun_14.png" type="Texture" id=228]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_0.png" type="Texture" id=229]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_1.png" type="Texture" id=230]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_2.png" type="Texture" id=231]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_3.png" type="Texture" id=232]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_4.png" type="Texture" id=233]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_5.png" type="Texture" id=234]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_6.png" type="Texture" id=235]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_7.png" type="Texture" id=236]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_8.png" type="Texture" id=237]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_9.png" type="Texture" id=238]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_10.png" type="Texture" id=239]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_11.png" type="Texture" id=240]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_12.png" type="Texture" id=241]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_13.png" type="Texture" id=242]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_14.png" type="Texture" id=243]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_15.png" type="Texture" id=244]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_16.png" type="Texture" id=245]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_17.png" type="Texture" id=246]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_18.png" type="Texture" id=247]
+[ext_resource path="res://assets/actors/player/body/rifle/idle/survivor-idle_rifle_19.png" type="Texture" id=248]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_0.png" type="Texture" id=249]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_1.png" type="Texture" id=250]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_2.png" type="Texture" id=251]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_3.png" type="Texture" id=252]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_4.png" type="Texture" id=253]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_5.png" type="Texture" id=254]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_6.png" type="Texture" id=255]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_7.png" type="Texture" id=256]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_8.png" type="Texture" id=257]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_9.png" type="Texture" id=258]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_10.png" type="Texture" id=259]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_11.png" type="Texture" id=260]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_12.png" type="Texture" id=261]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_13.png" type="Texture" id=262]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_14.png" type="Texture" id=263]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_15.png" type="Texture" id=264]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_16.png" type="Texture" id=265]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_17.png" type="Texture" id=266]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_18.png" type="Texture" id=267]
+[ext_resource path="res://assets/actors/player/body/handgun/move/survivor-move_handgun_19.png" type="Texture" id=268]
+[ext_resource path="res://assets/actors/player/body/handgun/shoot/survivor-shoot_handgun_0.png" type="Texture" id=269]
+[ext_resource path="res://assets/actors/player/body/handgun/shoot/survivor-shoot_handgun_1.png" type="Texture" id=270]
+[ext_resource path="res://assets/actors/player/body/handgun/shoot/survivor-shoot_handgun_2.png" type="Texture" id=271]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_0.png" type="Texture" id=272]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_1.png" type="Texture" id=273]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_2.png" type="Texture" id=274]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_3.png" type="Texture" id=275]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_4.png" type="Texture" id=276]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_5.png" type="Texture" id=277]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_6.png" type="Texture" id=278]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_7.png" type="Texture" id=279]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_8.png" type="Texture" id=280]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_9.png" type="Texture" id=281]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_10.png" type="Texture" id=282]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_11.png" type="Texture" id=283]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_12.png" type="Texture" id=284]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_13.png" type="Texture" id=285]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_14.png" type="Texture" id=286]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_15.png" type="Texture" id=287]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_16.png" type="Texture" id=288]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_17.png" type="Texture" id=289]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_18.png" type="Texture" id=290]
+[ext_resource path="res://assets/actors/player/body/rifle/move/survivor-move_rifle_19.png" type="Texture" id=291]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_0.png" type="Texture" id=292]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_1.png" type="Texture" id=293]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_2.png" type="Texture" id=294]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_3.png" type="Texture" id=295]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_4.png" type="Texture" id=296]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_5.png" type="Texture" id=297]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_6.png" type="Texture" id=298]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_7.png" type="Texture" id=299]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_8.png" type="Texture" id=300]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_9.png" type="Texture" id=301]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_10.png" type="Texture" id=302]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_11.png" type="Texture" id=303]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_12.png" type="Texture" id=304]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_13.png" type="Texture" id=305]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_14.png" type="Texture" id=306]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_15.png" type="Texture" id=307]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_16.png" type="Texture" id=308]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_17.png" type="Texture" id=309]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_18.png" type="Texture" id=310]
+[ext_resource path="res://assets/actors/player/body/shotgun/move/survivor-move_shotgun_19.png" type="Texture" id=311]
 [ext_resource path="res://assets/fx/flashlight/flashlight.tga" type="Texture" id=312]
 [ext_resource path="res://assets/fx/muzzle/muzzle_01.png" type="Texture" id=313]
 [ext_resource path="res://assets/fx/muzzle/muzzle_fx_01.png" type="Texture" id=314]
@@ -336,12 +336,12 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ) ],
 "loop": true,
-"name": "run",
+"name": "walk",
 "speed": 30.0
 }, {
 "frames": [ ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ) ],
 "loop": true,
-"name": "walk",
+"name": "run",
 "speed": 30.0
 } ]
 
@@ -372,54 +372,54 @@ animations = [ {
 "name": "reload_handgun",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 156 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 161 ), ExtResource( 162 ), ExtResource( 163 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 166 ), ExtResource( 167 ), ExtResource( 168 ), ExtResource( 169 ), ExtResource( 170 ), ExtResource( 171 ), ExtResource( 172 ), ExtResource( 173 ), ExtResource( 174 ), ExtResource( 175 ) ],
-"loop": true,
-"name": "move_handgun",
-"speed": 30.0
-}, {
-"frames": [ ExtResource( 176 ), ExtResource( 177 ), ExtResource( 178 ) ],
-"loop": false,
-"name": "shoot_shotgun",
-"speed": 15.0
-}, {
-"frames": [ ExtResource( 179 ), ExtResource( 180 ), ExtResource( 181 ), ExtResource( 182 ), ExtResource( 183 ), ExtResource( 184 ), ExtResource( 185 ), ExtResource( 186 ), ExtResource( 187 ), ExtResource( 188 ), ExtResource( 189 ), ExtResource( 190 ), ExtResource( 191 ), ExtResource( 192 ), ExtResource( 193 ), ExtResource( 194 ), ExtResource( 195 ), ExtResource( 196 ), ExtResource( 197 ), ExtResource( 198 ) ],
-"loop": true,
-"name": "idle_rifle",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 199 ), ExtResource( 200 ), ExtResource( 201 ), ExtResource( 202 ), ExtResource( 203 ), ExtResource( 204 ), ExtResource( 205 ), ExtResource( 206 ), ExtResource( 207 ), ExtResource( 208 ), ExtResource( 209 ), ExtResource( 210 ), ExtResource( 211 ), ExtResource( 212 ), ExtResource( 213 ), ExtResource( 214 ), ExtResource( 215 ), ExtResource( 216 ), ExtResource( 217 ), ExtResource( 218 ) ],
-"loop": true,
-"name": "move_shotgun",
-"speed": 30.0
-}, {
-"frames": [ ExtResource( 219 ), ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ), ExtResource( 228 ), ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ), ExtResource( 233 ) ],
-"loop": false,
-"name": "melee_handgun",
-"speed": 30.0
-}, {
-"frames": [ ExtResource( 234 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ), ExtResource( 238 ), ExtResource( 239 ), ExtResource( 240 ), ExtResource( 241 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 244 ), ExtResource( 245 ), ExtResource( 246 ), ExtResource( 247 ), ExtResource( 248 ), ExtResource( 249 ), ExtResource( 250 ), ExtResource( 251 ), ExtResource( 252 ), ExtResource( 253 ) ],
-"loop": false,
-"name": "reload_rifle",
-"speed": 30.0
-}, {
-"frames": [ ExtResource( 254 ), ExtResource( 255 ), ExtResource( 256 ), ExtResource( 257 ), ExtResource( 258 ), ExtResource( 259 ), ExtResource( 260 ), ExtResource( 261 ), ExtResource( 262 ), ExtResource( 263 ), ExtResource( 264 ), ExtResource( 265 ), ExtResource( 266 ), ExtResource( 267 ), ExtResource( 268 ), ExtResource( 269 ), ExtResource( 270 ), ExtResource( 271 ), ExtResource( 272 ), ExtResource( 273 ) ],
-"loop": true,
-"name": "move_rifle",
-"speed": 30.0
-}, {
-"frames": [ ExtResource( 274 ), ExtResource( 275 ), ExtResource( 276 ), ExtResource( 277 ), ExtResource( 278 ), ExtResource( 279 ), ExtResource( 280 ), ExtResource( 281 ), ExtResource( 282 ), ExtResource( 283 ), ExtResource( 284 ), ExtResource( 285 ), ExtResource( 286 ), ExtResource( 287 ), ExtResource( 288 ) ],
+"frames": [ ExtResource( 156 ), ExtResource( 157 ), ExtResource( 158 ), ExtResource( 159 ), ExtResource( 160 ), ExtResource( 161 ), ExtResource( 162 ), ExtResource( 163 ), ExtResource( 164 ), ExtResource( 165 ), ExtResource( 166 ), ExtResource( 167 ), ExtResource( 168 ), ExtResource( 169 ), ExtResource( 170 ) ],
 "loop": false,
 "name": "melee_shotgun",
 "speed": 30.0
 }, {
-"frames": [ ExtResource( 289 ), ExtResource( 290 ), ExtResource( 291 ), ExtResource( 292 ), ExtResource( 293 ), ExtResource( 294 ), ExtResource( 295 ), ExtResource( 296 ), ExtResource( 297 ), ExtResource( 298 ), ExtResource( 299 ), ExtResource( 300 ), ExtResource( 301 ), ExtResource( 302 ), ExtResource( 303 ), ExtResource( 304 ), ExtResource( 305 ), ExtResource( 306 ), ExtResource( 307 ), ExtResource( 308 ) ],
+"frames": [ ExtResource( 171 ), ExtResource( 172 ), ExtResource( 173 ), ExtResource( 174 ), ExtResource( 175 ), ExtResource( 176 ), ExtResource( 177 ), ExtResource( 178 ), ExtResource( 179 ), ExtResource( 180 ), ExtResource( 181 ), ExtResource( 182 ), ExtResource( 183 ), ExtResource( 184 ), ExtResource( 185 ), ExtResource( 186 ), ExtResource( 187 ), ExtResource( 188 ), ExtResource( 189 ), ExtResource( 190 ) ],
 "loop": true,
 "name": "idle_shotgun",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 309 ), ExtResource( 310 ), ExtResource( 311 ) ],
+"frames": [ ExtResource( 191 ), ExtResource( 192 ), ExtResource( 193 ), ExtResource( 194 ), ExtResource( 195 ), ExtResource( 196 ), ExtResource( 197 ), ExtResource( 198 ), ExtResource( 199 ), ExtResource( 200 ), ExtResource( 201 ), ExtResource( 202 ), ExtResource( 203 ), ExtResource( 204 ), ExtResource( 205 ), ExtResource( 206 ), ExtResource( 207 ), ExtResource( 208 ), ExtResource( 209 ), ExtResource( 210 ) ],
+"loop": false,
+"name": "reload_rifle",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 211 ), ExtResource( 212 ), ExtResource( 213 ) ],
+"loop": false,
+"name": "shoot_shotgun",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 214 ), ExtResource( 215 ), ExtResource( 216 ), ExtResource( 217 ), ExtResource( 218 ), ExtResource( 219 ), ExtResource( 220 ), ExtResource( 221 ), ExtResource( 222 ), ExtResource( 223 ), ExtResource( 224 ), ExtResource( 225 ), ExtResource( 226 ), ExtResource( 227 ), ExtResource( 228 ) ],
+"loop": false,
+"name": "melee_handgun",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 229 ), ExtResource( 230 ), ExtResource( 231 ), ExtResource( 232 ), ExtResource( 233 ), ExtResource( 234 ), ExtResource( 235 ), ExtResource( 236 ), ExtResource( 237 ), ExtResource( 238 ), ExtResource( 239 ), ExtResource( 240 ), ExtResource( 241 ), ExtResource( 242 ), ExtResource( 243 ), ExtResource( 244 ), ExtResource( 245 ), ExtResource( 246 ), ExtResource( 247 ), ExtResource( 248 ) ],
+"loop": true,
+"name": "idle_rifle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 249 ), ExtResource( 250 ), ExtResource( 251 ), ExtResource( 252 ), ExtResource( 253 ), ExtResource( 254 ), ExtResource( 255 ), ExtResource( 256 ), ExtResource( 257 ), ExtResource( 258 ), ExtResource( 259 ), ExtResource( 260 ), ExtResource( 261 ), ExtResource( 262 ), ExtResource( 263 ), ExtResource( 264 ), ExtResource( 265 ), ExtResource( 266 ), ExtResource( 267 ), ExtResource( 268 ) ],
+"loop": true,
+"name": "move_handgun",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 269 ), ExtResource( 270 ), ExtResource( 271 ) ],
 "loop": false,
 "name": "shoot_handgun",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 272 ), ExtResource( 273 ), ExtResource( 274 ), ExtResource( 275 ), ExtResource( 276 ), ExtResource( 277 ), ExtResource( 278 ), ExtResource( 279 ), ExtResource( 280 ), ExtResource( 281 ), ExtResource( 282 ), ExtResource( 283 ), ExtResource( 284 ), ExtResource( 285 ), ExtResource( 286 ), ExtResource( 287 ), ExtResource( 288 ), ExtResource( 289 ), ExtResource( 290 ), ExtResource( 291 ) ],
+"loop": true,
+"name": "move_rifle",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 292 ), ExtResource( 293 ), ExtResource( 294 ), ExtResource( 295 ), ExtResource( 296 ), ExtResource( 297 ), ExtResource( 298 ), ExtResource( 299 ), ExtResource( 300 ), ExtResource( 301 ), ExtResource( 302 ), ExtResource( 303 ), ExtResource( 304 ), ExtResource( 305 ), ExtResource( 306 ), ExtResource( 307 ), ExtResource( 308 ), ExtResource( 309 ), ExtResource( 310 ), ExtResource( 311 ) ],
+"loop": true,
+"name": "move_shotgun",
 "speed": 30.0
 } ]
 
@@ -434,6 +434,7 @@ particles_anim_loop = true
 next_pass = SubResource( 3 )
 flag_disable_z = true
 gravity = Vector3( 0, 0, 0 )
+angular_velocity = 8.38861e+006
 orbit_velocity = 0.0
 orbit_velocity_random = 0.0
 scale = 1.5
@@ -468,7 +469,7 @@ playing = true
 [node name="Body" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 9
+frame = 3
 playing = true
 offset = Vector2( 50, -50 )
 
@@ -518,5 +519,9 @@ shape = SubResource( 6 )
 [node name="FirerateTimer" type="Timer" parent="."]
 wait_time = 0.1
 one_shot = true
+
+[node name="ReloadTimer" type="Timer" parent="."]
+one_shot = true
 [connection signal="timeout" from="Body/MuzzleFlash/Timer" to="." method="_on_muzzle_timeout"]
 [connection signal="timeout" from="FirerateTimer" to="." method="_on_FirerateTimer_timeout"]
+[connection signal="timeout" from="ReloadTimer" to="." method="_on_ReloadTimer_timeout"]

@@ -10,7 +10,10 @@ func _ready():
 	player = get_tree().get_nodes_in_group("player").front()
 	
 	player.connect("health_changed", self, "_on_Player_health_changed")
-	player.connect("fired", self, "_on_Player_fired")
+	player.connect("ammo_changed", self, "_on_Player_fired")
+	
+	health_counter.text = str(player.health)
+	ammo_counter.text = str(player.ammo)
 
 func _on_Player_health_changed():
 	var hp = player.health
