@@ -1,6 +1,7 @@
 extends CanvasLayer
 
 onready var health_counter = $Health/HpContainer/HpCounter
+onready var ammo_counter = $AmmoFlashlight/AmmoFlashlightContainer/AmmoContainer/AmmoCounter
 
 var player
 
@@ -9,6 +10,7 @@ func _ready():
 	player = get_tree().get_nodes_in_group("player").front()
 	
 	player.connect("health_changed", self, "_on_Player_health_changed")
+	player.connect("fired", self, "_on_Player_fired")
 
 func _on_Player_health_changed():
 	var hp = player.health
@@ -24,3 +26,9 @@ func _on_Player_health_changed():
 	
 	health_counter.text = str(hp)
 	health_counter.set("custom_colors/font_color", hp_color)
+	
+func _on_Player_fired():
+	var ammo = player.ammo
+	var max_ammo = player.max_ammo
+	
+	ammo_counter.text = str(ammo)
