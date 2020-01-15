@@ -2,10 +2,10 @@ extends CanvasLayer
 
 onready var health_counter = $Health/HpContainer/HpCounter
 onready var ammo_counter = $AmmoFlashlight/AmmoFlashlightContainer/AmmoContainer/AmmoCounter
+onready var flashlight_bar = $AmmoFlashlight/AmmoFlashlightContainer/FlashlightContainer/FlashlightBar
 
 var player
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	player = get_tree().get_nodes_in_group("player").front()
 	
@@ -14,6 +14,11 @@ func _ready():
 	
 	health_counter.text = str(player.health)
 	ammo_counter.text = str(player.ammo)
+	
+func _process(delta):
+	var flashlight_power = player.flashlight_power
+	
+	flashlight_bar.value = flashlight_power
 
 func _on_Player_health_changed():
 	var hp = player.health

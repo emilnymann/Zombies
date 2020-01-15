@@ -1,4 +1,4 @@
-[gd_scene load_steps=326 format=2]
+[gd_scene load_steps=327 format=2]
 
 [ext_resource path="res://scripts/actors/Player.gd" type="Script" id=1]
 [ext_resource path="res://assets/actors/player/feet/idle/survivor-idle_0.png" type="Texture" id=2]
@@ -319,6 +319,7 @@
 [ext_resource path="res://assets/sfx/gun/single_fire_02.wav" type="AudioStream" id=317]
 [ext_resource path="res://assets/sfx/gun/outofammo.wav" type="AudioStream" id=318]
 [ext_resource path="res://assets/sfx/gun/weapload.wav" type="AudioStream" id=319]
+[ext_resource path="res://assets/sfx/ui/flashlight_click.wav" type="AudioStream" id=320]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -472,7 +473,7 @@ playing = true
 [node name="Body" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 13
+frame = 5
 playing = true
 offset = Vector2( 50, -50 )
 
@@ -539,6 +540,10 @@ volume_db = -7.0
 
 [node name="ReloadEnd" type="AudioStreamPlayer" parent="Audio"]
 stream = ExtResource( 319 )
+volume_db = -7.0
+
+[node name="FlashlightToggle" type="AudioStreamPlayer" parent="Audio"]
+stream = ExtResource( 320 )
 volume_db = -7.0
 [connection signal="timeout" from="Body/MuzzleFlash/Timer" to="." method="_on_muzzle_timeout"]
 [connection signal="timeout" from="FirerateTimer" to="." method="_on_FirerateTimer_timeout"]

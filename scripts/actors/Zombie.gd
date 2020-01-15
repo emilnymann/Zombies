@@ -11,7 +11,6 @@ onready var attack_timer = $AttackTimer
 var nav2d
 var player
 var timer
-var trigger
 var path : = PoolVector2Array()
 var is_active = false
 var is_moving = false
@@ -25,6 +24,7 @@ func _ready():
 #	timer = get_parent().get_node("PathfindingTimer")
 	attack_timer.connect("timeout", self, "_on_AttackTimer_timeout")
 	
+# warning-ignore:unused_argument
 func _process(delta):
 	pass
 

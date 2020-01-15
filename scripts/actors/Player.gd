@@ -7,8 +7,11 @@ const FIRE_RATE = 0.1 # time between each bullet
 const DAMAGE = 20
 var max_health = 100
 var max_ammo = 31
+var max_flashlight_power = 100
 var health = max_health
 var ammo = max_ammo
+var flashlight_power = max_flashlight_power
+var flashlight_power_factor = 0.2
 var fire_ready = true
 var flashlight_toggle = false # is flashlight on or off?
 
@@ -20,8 +23,10 @@ onready var blood = load("res://entities/fx/BloodSpatter.tscn")
 onready var fire_audio = $Audio/Fire
 onready var reloadstart_audio = $Audio/ReloadStart
 onready var reloadend_audio = $Audio/ReloadEnd
+onready var flashlight_toggle_audio = $Audio/FlashlightToggle
 onready var raycast = $Body/RayCastGun
 onready var muzzle = $Body/MuzzleFlash
+onready var flashlight = $Body/Flashlight
 onready var muzzletimer = $Body/MuzzleFlash/Timer
 onready var muzzlefx = $Body/MuzzleFx
 onready var firetimer = $FirerateTimer
@@ -35,9 +40,6 @@ signal ammo_changed
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
-
-#func _process(delta):
-#	pass
 
 func _physics_process(delta):
 	var move_vec = Vector2()
@@ -57,12 +59,7 @@ func _physics_process(delta):
 		move_vec.x += 1
 		
 	if Input.is_action_just_pressed("flashlight_toggle"):
-		flashlight_toggle = !flashlight_toggle
-		
-		if flashlight_toggle:
-			flashlight.visible = true;
-		else:
-			flashlight.visible = false;
+		toggle_flashlight()
 			
 	if Input.is_action_pressed("fire"):
 		if fire_ready == true and ammo > 0 and !is_reloading:
@@ -75,6 +72,7 @@ func _physics_process(delta):
 			reload()
 			
 		
+# warning-ignore:return_value_discarded
 	move_and_collide(move_vec * MOVE_SPEED * delta)
 	global_rotation = atan2(look_vec.y, look_vec.x)
 	
@@ -83,7 +81,16 @@ func _physics_process(delta):
 		feet.global_rotation = atan2(look_vec.y, look_vec.x)
 	else:
 		is_moving = true
+	
+	if flashlight_toggle && flashlight_power > 0:
+		flashlight_power -= (1 * flashlight_power_factor)
+	elif !flashlight_toggle && flashlight_power < max_flashlight_power:
+		flashlight_power += (1 * flashlight_power_factor)
 		
+	if flashlight_power < 1:
+		toggle_flashlight()
+	
+	# ANIMATION HANDLING
 	if is_moving:
 		feet.play("walk")
 		feet.global_rotation = atan2(move_vec.y, move_vec.x)
@@ -122,6 +129,16 @@ func reload():
 	reloadtimer.start(-1)
 	is_reloading = true
 	body.play("reload_rifle")
+	
+func toggle_flashlight():
+	flashlight_toggle_audio.play()
+	if !flashlight_toggle:
+		if flashlight_power > 1:
+			flashlight_toggle = true
+			flashlight.visible = true
+	else:
+		flashlight_toggle = false
+		flashlight.visible = false
 		
 func take_damage(amount, direction):
 	print("Player took " + str(amount) + " damage!")
