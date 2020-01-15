@@ -2,9 +2,9 @@ extends KinematicBody2D
 
 var bullet_trace = load("res://entities/fx/BulletTrace.tscn")
 
-export var MOVE_SPEED = 20000
+export var MOVE_SPEED = 18000
 export var FIRE_RATE = 0.1 # time between each bullet
-export var DAMAGE = 20
+export var DAMAGE = 15
 export var max_health = 100
 export var max_ammo = 31
 export var max_flashlight_power = 100
