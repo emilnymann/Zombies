@@ -7,18 +7,21 @@ onready var flashlight_bar = $AmmoFlashlight/AmmoFlashlightContainer/FlashlightC
 var player
 
 func _ready():
-	player = get_tree().get_nodes_in_group("player").front()
+	pass
+	
+func _process(delta):
+	var flashlight_power = player.flashlight_power
+	
+	flashlight_bar.value = flashlight_power
+	
+func set_player(p):
+	player = p
 	
 	player.connect("health_changed", self, "_on_Player_health_changed")
 	player.connect("ammo_changed", self, "_on_Player_fired")
 	
 	health_counter.text = str(player.health)
 	ammo_counter.text = str(player.ammo)
-	
-func _process(delta):
-	var flashlight_power = player.flashlight_power
-	
-	flashlight_bar.value = flashlight_power
 
 func _on_Player_health_changed():
 	var hp = player.health
