@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var MOVE_SPEED = 280
+export var MOVE_SPEED = 300
 export var DAMAGE = 10
 export var health = 100
 
@@ -49,7 +49,7 @@ func _physics_process(delta):
 			var distance_to_next_point = position.distance_to(path[0])
 			if distance_to_walk <= distance_to_next_point:
 				var direction = position.direction_to(path[0])
-				position += direction * distance_to_walk
+				move_and_slide(direction * (distance_to_walk * 50))
 				move_dir = atan2(direction.y, direction.x)
 			else:
 				position = path[0]
@@ -58,8 +58,9 @@ func _physics_process(delta):
 			
 			distance_to_walk -= distance_to_next_point
 			
+		global_rotation = move_dir
+		
 		if is_moving:
-			global_rotation = lerp(global_rotation, move_dir, 0.75)
 			body.play("move")
 		elif is_attacking:
 			body.play("attack")
