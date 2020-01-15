@@ -2,38 +2,42 @@ extends KinematicBody2D
 
 var bullet_trace = load("res://entities/fx/BulletTrace.tscn")
 
-const MOVE_SPEED = 20000
-const FIRE_RATE = 0.1 # time between each bullet
-const DAMAGE = 20
-var max_health = 100
-var max_ammo = 31
-var max_flashlight_power = 100
+export var MOVE_SPEED = 20000
+export var FIRE_RATE = 0.1 # time between each bullet
+export var DAMAGE = 20
+export var max_health = 100
+export var max_ammo = 31
+export var max_flashlight_power = 100
+export var flashlight_power_factor = 0.2
 var health = max_health
 var ammo = max_ammo
 var flashlight_power = max_flashlight_power
-var flashlight_power_factor = 0.2
-var fire_ready = true
-var flashlight_toggle = false # is flashlight on or off?
 
+var flashlight_toggle = false
+var fire_ready = true
 var is_moving = false
 var is_firing = false
 var is_reloading = false
 
+# effects
 onready var blood = load("res://entities/fx/BloodSpatter.tscn")
 onready var fire_audio = $Audio/Fire
 onready var reloadstart_audio = $Audio/ReloadStart
 onready var reloadend_audio = $Audio/ReloadEnd
 onready var flashlight_toggle_audio = $Audio/FlashlightToggle
-onready var raycast = $Body/RayCastGun
 onready var muzzle = $Body/MuzzleFlash
+onready var muzzlefx = $Body/MuzzleFx
+
+# logic nodes
+onready var raycast = $Body/RayCastGun
 onready var flashlight = $Body/Flashlight
 onready var muzzletimer = $Body/MuzzleFlash/Timer
-onready var muzzlefx = $Body/MuzzleFx
 onready var firetimer = $FirerateTimer
 onready var reloadtimer = $ReloadTimer
 onready var feet = $Feet
 onready var body = $Body
 
+# signals
 signal health_changed
 signal ammo_changed
 
@@ -44,7 +48,6 @@ func _ready():
 func _physics_process(delta):
 	var move_vec = Vector2()
 	var look_vec = get_global_mouse_position() - global_position
-	var flashlight = get_node("Body/Flashlight")
 	
 	if health <= 0:
 		kill()
@@ -90,16 +93,20 @@ func _physics_process(delta):
 	if flashlight_power < 1:
 		toggle_flashlight()
 	
-	# ANIMATION HANDLING
+	# animations
 	if is_moving:
 		feet.play("walk")
 		feet.global_rotation = atan2(move_vec.y, move_vec.x)
 		if !is_reloading && !is_firing:
 			body.play("move_rifle")
+		elif is_firing:
+			body.play("shoot_rifle")
 	else:
 		feet.play("idle")
 		if !is_reloading && !is_firing:
 			body.play("idle_rifle")
+		elif is_firing:
+			body.play("shoot_rifle")
 		
 func fire():
 	is_firing = true
