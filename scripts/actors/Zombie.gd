@@ -1,9 +1,13 @@
 extends KinematicBody2D
 
-const MOVE_SPEED = 200
-const DAMAGE = 10
-var health = 100
+export var MOVE_SPEED = 200
+export var DAMAGE = 10
+export var health = 100
+
+# effects
 onready var blood = load("res://entities/fx/BloodSpatter.tscn")
+
+# logic nodes
 onready var body = $Body
 onready var raycast = $AttackRaycast
 onready var attack_timer = $AttackTimer
@@ -20,15 +24,13 @@ var move_dir = global_rotation
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-#	player = get_parent().get_node("Player")
-#	nav2d = get_parent().get_node("Navigation2D")
-#	timer = get_parent().get_node("PathfindingTimer")
 	attack_timer.connect("timeout", self, "_on_AttackTimer_timeout")
 	
 func _process(delta):
 	pass
 
 func _physics_process(delta):
+	
 	if health <= 0:
 		kill()
 		

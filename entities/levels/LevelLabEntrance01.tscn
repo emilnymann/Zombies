@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scripts/levels/LevelLabEntrance01.gd" type="Script" id=1]
 [ext_resource path="res://entities/world/UndergroundLabTile.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://entities/actors/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://entities/misc/PlayerCamera.tscn" type="PackedScene" id=5]
 [ext_resource path="res://entities/UI/HUD.tscn" type="PackedScene" id=6]
+[ext_resource path="res://entities/actors/Zombie.tscn" type="PackedScene" id=7]
 
 [node name="LevelLabEntrance01" type="Node2D"]
 script = ExtResource( 1 )
@@ -25,3 +26,6 @@ position = Vector2( -117.422, 296.418 )
 [node name="PlayerCamera" parent="." instance=ExtResource( 5 )]
 
 [node name="HUD" parent="." instance=ExtResource( 6 )]
+
+[node name="Zombie" parent="." instance=ExtResource( 7 )]
+position = Vector2( 2205.72, 250.381 )
