@@ -56,3 +56,4 @@ margin_right = 122.0
 margin_bottom = 71.0
 text = "Quit"
 [connection signal="pressed" from="MenuContainer/ButtonsContainer/PlayButton" to="." method="_on_PlayButton_pressed"]
+[connection signal="pressed" from="MenuContainer/ButtonsContainer/QuitButton" to="." method="_on_QuitButton_pressed"]

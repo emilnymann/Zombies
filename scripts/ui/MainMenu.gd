@@ -14,3 +14,7 @@ func _ready():
 
 func _on_PlayButton_pressed():
 	get_tree().change_scene_to(first_level)
+
+
+func _on_QuitButton_pressed():
+	get_tree().quit()
