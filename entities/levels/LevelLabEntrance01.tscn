@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scripts/levels/LevelLabEntrance01.gd" type="Script" id=1]
 [ext_resource path="res://entities/world/UndergroundLabTile.tscn" type="PackedScene" id=2]
@@ -6,7 +6,11 @@
 [ext_resource path="res://entities/actors/Player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://entities/misc/PlayerCamera.tscn" type="PackedScene" id=5]
 [ext_resource path="res://entities/UI/HUD.tscn" type="PackedScene" id=6]
-[ext_resource path="res://entities/actors/Zombie.tscn" type="PackedScene" id=7]
+[ext_resource path="res://entities/world/ZombieTrigger.tscn" type="PackedScene" id=7]
+[ext_resource path="res://entities/actors/Zombie.tscn" type="PackedScene" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 93.8784, 298.97 )
 
 [node name="LevelLabEntrance01" type="Node2D"]
 script = ExtResource( 1 )
@@ -31,7 +35,38 @@ position = Vector2( -117.422, 296.418 )
 
 [node name="HUD" parent="." instance=ExtResource( 6 )]
 
-[node name="Zombie" parent="." groups=[
+[node name="Triggers" type="Node2D" parent="."]
+
+[node name="HallwayTrigger" parent="Triggers" instance=ExtResource( 7 )]
+editor/display_folded = true
+position = Vector2( 927.004, 297.641 )
+group_name = "lab_entrance_hallway_zombie"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Triggers/HallwayTrigger"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Zombies" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Zombie" parent="Zombies" groups=[
 "lab_entrance_hallway_zombie",
-] instance=ExtResource( 7 )]
-position = Vector2( 911.707, 295.697 )
+] instance=ExtResource( 8 )]
+position = Vector2( 2052.15, 237.794 )
+
+[node name="Zombie2" parent="Zombies" groups=[
+"lab_entrance_hallway_zombie",
+] instance=ExtResource( 8 )]
+position = Vector2( 2190.61, 378.775 )
+
+[node name="Zombie3" parent="Zombies" groups=[
+"lab_entrance_hallway_zombie",
+] instance=ExtResource( 8 )]
+position = Vector2( 2306.42, 235.276 )
+
+[node name="Zombie4" parent="Zombies" groups=[
+"lab_entrance_hallway_zombie",
+] instance=ExtResource( 8 )]
+position = Vector2( 2477.61, 381.293 )
