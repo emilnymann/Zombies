@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scripts/levels/LevelLabEntrance01.gd" type="Script" id=1]
 [ext_resource path="res://entities/world/UndergroundLabTile.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://entities/UI/HUD.tscn" type="PackedScene" id=6]
 [ext_resource path="res://entities/world/ZombieTrigger.tscn" type="PackedScene" id=7]
 [ext_resource path="res://entities/actors/Zombie.tscn" type="PackedScene" id=8]
+[ext_resource path="res://entities/props/lamps/Spotlamp.tscn" type="PackedScene" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 93.8784, 298.97 )
@@ -95,3 +96,7 @@ position = Vector2( 1942.87, 373.924 )
 "lab_entrance_hallway_zombie",
 ] instance=ExtResource( 8 )]
 position = Vector2( 1687.34, 241.98 )
+
+[node name="Spotlamp" parent="." instance=ExtResource( 9 )]
+position = Vector2( 978.884, 41.2242 )
+rotation = 2.09439
