@@ -7,6 +7,10 @@ export var health = 100
 # effects
 onready var blood = load("res://entities/fx/BloodSpatter.tscn")
 
+# audio
+onready var impact_sound_1 = $Audio/Impact01
+onready var impact_sound_2 = $Audio/Impact02
+
 # logic nodes
 onready var body = $Body
 onready var raycast = $AttackRaycast
@@ -78,12 +82,21 @@ func set_pathfinding_timer(pft):
 	timer.connect("timeout", self, "_on_PathfindingTimer_timeout")
 
 func take_damage(amount, direction):
+	
+	var rng = randi()%3+1
+	
 	print("Zombie took " + str(amount) + " damage!")
 	var blood_instance = blood.instance()
 	blood_instance.global_position = body.global_position
 	blood_instance.global_rotation = ( direction * -1 ).angle()
 	get_parent().add_child(blood_instance)
 	health = health - amount
+	
+	match rng:
+		1:
+			impact_sound_1.play()
+		2:
+			impact_sound_2.play()
 	
 func kill():
 	print("Died!")
