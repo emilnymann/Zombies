@@ -2,7 +2,7 @@
  
 My first game, developed in Godot 3.1
 
-# Controls
+## Controls
 WASD                Move
 Mouse               Aim
 Left Click          Shoot
