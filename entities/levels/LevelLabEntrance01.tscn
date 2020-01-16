@@ -26,7 +26,7 @@ wait_time = 0.5
 autostart = true
 
 [node name="CanvasModulate" parent="." instance=ExtResource( 3 )]
-color = Color( 0.160784, 0.172549, 0.192157, 1 )
+color = Color( 0.0901961, 0.0941176, 0.0980392, 1 )
 
 [node name="Player" parent="." instance=ExtResource( 4 )]
 position = Vector2( -117.422, 296.418 )
@@ -97,6 +97,8 @@ position = Vector2( 1942.87, 373.924 )
 ] instance=ExtResource( 8 )]
 position = Vector2( 1687.34, 241.98 )
 
-[node name="Spotlamp" parent="." instance=ExtResource( 9 )]
-position = Vector2( 978.884, 41.2242 )
-rotation = 2.09439
+[node name="Props" type="Node2D" parent="."]
+
+[node name="Spotlamp" parent="Props" instance=ExtResource( 9 )]
+position = Vector2( 739.218, 45.7462 )
+rotation = 0.523598
