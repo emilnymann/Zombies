@@ -91,6 +91,7 @@ func take_damage(amount, direction):
 	blood_instance.global_rotation = ( direction * -1 ).angle()
 	get_parent().add_child(blood_instance)
 	health = health - amount
+	move_and_slide((direction * -1) * 500)
 	
 	match rng:
 		1:

@@ -32,7 +32,6 @@ __meta__ = {
 }
 
 [node name="Zombies" type="Node2D" parent="."]
-editor/display_folded = true
 
 [node name="Zombie" parent="Zombies" groups=[
 "lab_entrance_hallway_zombie",
@@ -80,6 +79,7 @@ position = Vector2( 1942.87, 373.924 )
 position = Vector2( 1687.34, 241.98 )
 
 [node name="Props" type="Node2D" parent="."]
+editor/display_folded = true
 z_index = 1
 
 [node name="Spotlamp3" parent="Props" instance=ExtResource( 4 )]
@@ -87,6 +87,7 @@ position = Vector2( 2581.11, 294.202 )
 rotation = -3.24785
 
 [node name="FX" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="DevLightBlue" parent="FX" instance=ExtResource( 5 )]
 position = Vector2( -270.962, 288.156 )
