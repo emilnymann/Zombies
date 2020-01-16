@@ -18,6 +18,7 @@ var fire_ready = true
 var is_moving = false
 var is_firing = false
 var is_reloading = false
+var is_dead = false
 
 # effects
 onready var blood = load("res://entities/fx/BloodSpatter.tscn")
@@ -34,6 +35,7 @@ onready var flashlight = $Body/Flashlight
 onready var muzzletimer = $Body/MuzzleFlash/Timer
 onready var firetimer = $FirerateTimer
 onready var reloadtimer = $ReloadTimer
+onready var killtween = $KillTween
 onready var feet = $Feet
 onready var body = $Body
 
@@ -49,7 +51,7 @@ func _physics_process(delta):
 	var move_vec = Vector2()
 	var look_vec = get_global_mouse_position() - global_position
 	
-	if health <= 0:
+	if health <= 0 && !is_dead:
 		kill()
 	
 	if Input.is_action_pressed("move_up"):
@@ -157,7 +159,9 @@ func take_damage(amount, direction):
 	emit_signal("health_changed")
 	
 func kill():
-	print("You died!")
+	is_dead = true
+	var mainmenu = load("res://entities/UI/MainMenu.tscn")
+	get_tree().change_scene_to(mainmenu)
 
 func _on_muzzle_timeout():
 	muzzle.visible = false
