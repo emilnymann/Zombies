@@ -102,3 +102,7 @@ position = Vector2( 1687.34, 241.98 )
 [node name="Spotlamp" parent="Props" instance=ExtResource( 9 )]
 position = Vector2( 739.218, 45.7462 )
 rotation = 0.523598
+
+[node name="Spotlamp2" parent="Props" instance=ExtResource( 9 )]
+position = Vector2( 457.485, 529.085 )
+rotation = -0.523598
