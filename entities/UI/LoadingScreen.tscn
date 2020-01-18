@@ -57,6 +57,7 @@ margin_bottom = -24.0
 margin_right = 720.0
 margin_bottom = 21.0
 theme = ExtResource( 3 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 text = "Loading..."
 
 [node name="LoadingBar" type="TextureProgress" parent="LoadingVBoxContainer"]
@@ -70,4 +71,10 @@ tint_under = Color( 0.392157, 0.392157, 0.392157, 1 )
 [node name="ReadyTimer" type="Timer" parent="."]
 one_shot = true
 autostart = true
+
+[node name="FlashTween" type="Tween" parent="."]
+
+[node name="FlashTween2" type="Tween" parent="."]
 [connection signal="timeout" from="ReadyTimer" to="." method="_on_ReadyTimer_timeout"]
+[connection signal="tween_all_completed" from="FlashTween" to="." method="_on_FlashTween_tween_all_completed"]
+[connection signal="tween_all_completed" from="FlashTween2" to="." method="_on_FlashTween2_tween_all_completed"]
