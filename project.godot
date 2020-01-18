@@ -19,10 +19,6 @@ config/name="Zombies"
 run/main_scene="res://scenes/Game.tscn"
 config/icon="res://icon.png"
 
-[display]
-
-mouse_cursor/custom_image_hotspot=Vector2( 16, 16 )
-
 [input]
 
 move_left={

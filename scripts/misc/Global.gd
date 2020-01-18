@@ -2,6 +2,7 @@ extends Node2D
 
 onready var main_menu = $MainMenu
 onready var loading_screen = load("res://entities/UI/LoadingScreen.tscn")
+onready var crosshair = load("res://assets/ui/hud/crosshair.png")
 export var level_path : String
 export var level_name : String
 
@@ -25,3 +26,4 @@ func _on_continue_pressed():
 	level = level.instance()
 	remove_child(loading_screen)
 	add_child(level)
+	Input.set_custom_mouse_cursor(crosshair, Input.CURSOR_ARROW, Vector2(16, 16))

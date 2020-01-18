@@ -16,6 +16,8 @@ func _ready():
 	tree.call_group("zombie", "set_player", player)
 	tree.call_group("zombie", "set_nav", pathfinding)
 	tree.call_group("zombie", "set_pathfinding_timer", pathfinding_timer)
+	
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
