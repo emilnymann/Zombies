@@ -9,6 +9,7 @@ export var level_name : String
 func _ready():
 	main_menu.get_node("MenuContainer/ButtonsContainer/PlayButton").connect("pressed", self, "_on_PlayButton_pressed")
 	main_menu.get_node("MenuContainer/ButtonsContainer/QuitButton").connect("pressed", self, "_on_QuitButton_pressed")
+	main_menu.get_node("SettingsPopup/SettingsContainer/FullscreenContainer/FullscreenCheckButton").connect("toggled", self, "_on_FullscreenCheckButton_toggled")
 
 func _on_PlayButton_pressed():
 	remove_child(main_menu)
@@ -20,6 +21,9 @@ func _on_PlayButton_pressed():
 	
 func _on_QuitButton_pressed():
 	get_tree().quit()
+	
+func _on_FullscreenCheckButton_toggled(button_pressed):
+	OS.window_fullscreen = !OS.window_fullscreen
 	
 func _on_continue_pressed():
 	var level = loading_screen.level
