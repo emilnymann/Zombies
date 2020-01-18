@@ -6,7 +6,6 @@
 extents = Vector2( 20.2142, 31.4389 )
 
 [node name="ReceptionChair" type="StaticBody2D"]
-z_index = -1
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
