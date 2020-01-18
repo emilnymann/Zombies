@@ -35,7 +35,6 @@ onready var flashlight = $Body/Flashlight
 onready var muzzletimer = $Body/MuzzleFlash/Timer
 onready var firetimer = $FirerateTimer
 onready var reloadtimer = $ReloadTimer
-onready var killtween = $KillTween
 onready var feet = $Feet
 onready var body = $Body
 

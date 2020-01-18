@@ -19,7 +19,6 @@ onready var attack_timer = $AttackTimer
 var nav2d
 var player
 var timer
-var trigger
 var path : = PoolVector2Array()
 var is_active = false
 var is_moving = false
