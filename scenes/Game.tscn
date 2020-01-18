@@ -5,5 +5,6 @@
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
+level_path = "res://entities/levels/LevelLabEntrance01.tscn"
 
 [node name="MainMenu" parent="." instance=ExtResource( 2 )]

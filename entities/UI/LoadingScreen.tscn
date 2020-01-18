@@ -56,3 +56,5 @@ margin_bottom = 36.0
 texture_under = ExtResource( 4 )
 texture_progress = ExtResource( 4 )
 tint_under = Color( 0.392157, 0.392157, 0.392157, 1 )
+
+[node name="ProgressTween" type="Tween" parent="."]
