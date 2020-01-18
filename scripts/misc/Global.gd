@@ -12,9 +12,16 @@ func _ready():
 func _on_PlayButton_pressed():
 	remove_child(main_menu)
 	loading_screen = loading_screen.instance()
+	loading_screen.connect("continue_pressed", self, "_on_continue_pressed")
 	loading_screen.level_to_load = level_path
 	loading_screen.level_display_name = level_name
 	add_child(loading_screen)
 	
 func _on_QuitButton_pressed():
 	get_tree().quit()
+	
+func _on_continue_pressed():
+	var level = loading_screen.level
+	level = level.instance()
+	remove_child(loading_screen)
+	add_child(level)

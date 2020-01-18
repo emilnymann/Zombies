@@ -6,8 +6,11 @@ onready var loading_label = $LoadingVBoxContainer/LoadingLabel
 var loader : ResourceInteractiveLoader
 var loaded = false
 var ready = false
+var level : PackedScene
 var level_to_load : String
 var level_display_name : String
+
+signal continue_pressed
 
 func _ready():
 	loader = ResourceLoader.load_interactive(level_to_load)
@@ -26,6 +29,8 @@ func _process(delta):
 				print("there was an error")
 		else:
 			finish_loading()
+			if Input.is_action_just_pressed("loading_continue"):
+				emit_signal("continue_pressed")
 
 func update_progress():
 	var progress : float = float(loader.get_stage()) / float(loader.get_stage_count()) * 100
@@ -35,6 +40,7 @@ func update_progress():
 
 func finish_loading():
 	loading_bar.value = 100
+	level = loader.get_resource()
 	loading_label.text = "Press SPACE to continue..."
 
 func _on_ReadyTimer_timeout():
