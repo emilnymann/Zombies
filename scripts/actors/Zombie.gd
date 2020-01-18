@@ -53,7 +53,7 @@ func _physics_process(delta):
 			var distance_to_next_point = position.distance_to(path[0])
 			if distance_to_walk <= distance_to_next_point:
 				var direction = position.direction_to(path[0])
-				move_and_slide(direction * (distance_to_walk * 50))
+				move_and_slide(direction * (MOVE_SPEED))
 				move_dir = atan2(direction.y, direction.x)
 			else:
 				position = path[0]

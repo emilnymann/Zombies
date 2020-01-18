@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var bullet_trace = load("res://entities/fx/BulletTrace.tscn")
 
-export var MOVE_SPEED = 18000
+export var MOVE_SPEED = 300
 export var FIRE_RATE = 0.1 # time between each bullet
 export var DAMAGE = 15
 export var max_health = 100
@@ -78,7 +78,7 @@ func _physics_process(delta):
 			
 		
 # warning-ignore:return_value_discarded
-	move_and_slide(move_vec * MOVE_SPEED * delta)
+	move_and_slide(move_vec * MOVE_SPEED)
 	global_rotation = atan2(look_vec.y, look_vec.x)
 	
 	if move_vec == Vector2(0, 0):

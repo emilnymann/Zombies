@@ -35,6 +35,7 @@ __meta__ = {
 }
 
 [node name="Props" type="Node2D" parent="."]
+editor/display_folded = true
 z_index = 1
 
 [node name="Spotlamp3" parent="Props" instance=ExtResource( 3 )]
