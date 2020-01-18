@@ -176,5 +176,6 @@ color = Color( 0.0901961, 0.0941176, 0.0980392, 1 )
 position = Vector2( -117.422, 296.418 )
 
 [node name="PlayerCamera" parent="." instance=ExtResource( 13 )]
+position = Vector2( -117.422, 296.418 )
 
 [node name="HUD" parent="." instance=ExtResource( 14 )]
