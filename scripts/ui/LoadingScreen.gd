@@ -13,6 +13,9 @@ var level : PackedScene
 var level_to_load : String
 var level_display_name : String
 
+var resources : = Array()
+var total_chunks
+
 signal continue_pressed
 
 func _ready():
