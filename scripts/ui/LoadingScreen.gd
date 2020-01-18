@@ -2,15 +2,16 @@ extends CanvasLayer
 
 onready var loading_bar = $LoadingVBoxContainer/LoadingBar
 onready var loading_label = $LoadingVBoxContainer/LoadingLabel
-onready var ready_timer = $ReadyTimer
 
 var loader : ResourceInteractiveLoader
 var loaded = false
 var ready = false
 var level_to_load : String
+var level_display_name : String
 
 func _ready():
 	loader = ResourceLoader.load_interactive(level_to_load)
+	loading_label.text = "Loading " + level_display_name + "..."
 
 func _process(delta):
 	if ready:
