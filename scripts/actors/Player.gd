@@ -7,10 +7,12 @@ export var FIRE_RATE = 0.1 # time between each bullet
 export var DAMAGE = 15
 export var max_health = 100
 export var max_ammo = 31
+export var max_reserve_ammo = 155
 export var max_flashlight_power = 100
 export var flashlight_power_factor = 0.2
 var health = max_health
 var ammo = max_ammo
+var reserve_ammo = max_reserve_ammo
 var flashlight_power = max_flashlight_power
 
 var flashlight_toggle = false
@@ -41,6 +43,7 @@ onready var body = $Body
 # signals
 signal health_changed
 signal ammo_changed
+signal reloaded
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -72,9 +75,8 @@ func _physics_process(delta):
 			fire()
 			
 	if Input.is_action_just_pressed("reload"):
-		if !is_reloading && !is_firing && ammo < max_ammo:
+		if !is_reloading && !is_firing && ammo < max_ammo && reserve_ammo > 0:
 			reload()
-			
 		
 # warning-ignore:return_value_discarded
 	move_and_slide(move_vec * MOVE_SPEED)
@@ -171,7 +173,17 @@ func _on_FirerateTimer_timeout():
 	fire_ready = true
 
 func _on_ReloadTimer_timeout():
+	var refill_amount = max_ammo - ammo
+	
+	if reserve_ammo >= refill_amount:
+		reserve_ammo -= refill_amount
+		ammo = max_ammo
+	else:
+		ammo = reserve_ammo
+		reserve_ammo = 0
+		
+	emit_signal("reloaded")
+	
 	reloadend_audio.play()
-	ammo = max_ammo
 	emit_signal("ammo_changed")
 	is_reloading = false

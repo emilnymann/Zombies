@@ -42,11 +42,12 @@ anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -127.0
+margin_left = -164.909
 margin_top = -55.0
+margin_right = -25.9089
 
 [node name="AmmoFlashlightContainer" type="HBoxContainer" parent="AmmoFlashlight"]
-margin_right = 127.0
+margin_right = 139.0
 margin_bottom = 55.0
 
 [node name="FlashlightContainer" type="Control" parent="AmmoFlashlight/AmmoFlashlightContainer"]
@@ -64,7 +65,7 @@ fill_mode = 3
 
 [node name="AmmoContainer" type="HBoxContainer" parent="AmmoFlashlight/AmmoFlashlightContainer"]
 margin_left = 4.0
-margin_right = 88.0
+margin_right = 139.0
 margin_bottom = 55.0
 
 [node name="AmmoLabel" type="Label" parent="AmmoFlashlight/AmmoFlashlightContainer/AmmoContainer"]
@@ -78,9 +79,25 @@ text = "Ammo:"
 [node name="AmmoCounter" type="Label" parent="AmmoFlashlight/AmmoFlashlightContainer/AmmoContainer"]
 margin_left = 64.0
 margin_top = 17.0
-margin_right = 84.0
+margin_right = 86.0
 margin_bottom = 38.0
 custom_fonts/font = ExtResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
-text = "21"
+text = "99"
 align = 2
+
+[node name="AmmoDivider" type="Label" parent="AmmoFlashlight/AmmoFlashlightContainer/AmmoContainer"]
+margin_left = 90.0
+margin_top = 17.0
+margin_right = 97.0
+margin_bottom = 38.0
+custom_fonts/font = ExtResource( 2 )
+text = "/"
+
+[node name="AmmoReserveCounter" type="Label" parent="AmmoFlashlight/AmmoFlashlightContainer/AmmoContainer"]
+margin_left = 101.0
+margin_top = 17.0
+margin_right = 135.0
+margin_bottom = 38.0
+custom_fonts/font = ExtResource( 2 )
+text = "999"
