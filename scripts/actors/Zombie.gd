@@ -3,6 +3,7 @@ extends KinematicBody2D
 export var MOVE_SPEED = 300
 export var DAMAGE = 10
 export var health = 100
+export var drops = Array()
 
 # effects
 onready var blood = load("res://entities/fx/BloodSpatter.tscn")
@@ -19,6 +20,7 @@ onready var attack_timer = $AttackTimer
 var nav2d
 var player
 var timer
+var selected_drop = -1
 var path : = PoolVector2Array()
 var is_active = false
 var is_moving = false
@@ -28,6 +30,12 @@ var move_dir = global_rotation
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	attack_timer.connect("timeout", self, "_on_AttackTimer_timeout")
+	
+	if drops.size() > 0:
+		var rng = RandomNumberGenerator.new()
+		rng.randomize()
+		if rng.randf_range(0.0, 1.0) > 0.6:
+			selected_drop = rng.randi_range(0, (drops.size() - 1))
 	
 func _process(delta):
 	pass
@@ -99,7 +107,13 @@ func take_damage(amount, direction):
 			impact_sound_2.play()
 	
 func kill():
-	print("Died!")
+	
+	if selected_drop > -1:
+		var drop : PackedScene = drops[selected_drop]
+		var drop_instance = drop.instance()
+		drop_instance.global_position = global_position
+		get_parent().add_child(drop_instance)
+	
 	queue_free()
 	
 func activate():
