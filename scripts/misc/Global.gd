@@ -7,11 +7,6 @@ onready var music = $Music/MusicMain
 export var level_path : String
 export var level_name : String
 
-func _ready():
-	main_menu.get_node("MenuContainer/ButtonsContainer/PlayButton").connect("pressed", self, "_on_PlayButton_pressed")
-	main_menu.get_node("MenuContainer/ButtonsContainer/QuitButton").connect("pressed", self, "_on_QuitButton_pressed")
-	main_menu.get_node("SettingsPopup/SettingsContainer/FullscreenContainer/FullscreenCheckButton").connect("toggled", self, "_on_FullscreenCheckButton_toggled")
-
 func _on_PlayButton_pressed():
 	remove_child(main_menu)
 	loading_screen = loading_screen.instance()
