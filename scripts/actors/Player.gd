@@ -179,6 +179,22 @@ func add_ammo(amount):
 		reloadstart_audio.play()
 	
 	return picked_up
+	
+func add_health(amount):
+	var picked_up = false
+	var useable_amount = max_health - health
+	
+	if useable_amount > 0:
+		picked_up = true
+		
+		if amount > useable_amount:
+			health += useable_amount
+		else:
+			health += amount
+		
+		emit_signal("health_changed")
+		
+	return picked_up
 
 func _on_muzzle_timeout():
 	muzzle.visible = false
