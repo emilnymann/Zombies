@@ -125,6 +125,7 @@ energy = 0.4
 shadow_enabled = false
 
 [node name="Zombies" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Zombie" parent="Zombies" groups=[
 "lab_entrance_hallway_zombie",

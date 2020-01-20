@@ -1,6 +1,6 @@
 extends Area2D
 
-export var amount = 31
+export var amount = 20
 
 onready var sprite = $Sprite
 onready var light = $Light2D

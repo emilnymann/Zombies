@@ -169,7 +169,12 @@ func add_ammo(amount):
 	
 	if useable_amount > 0:
 		picked_up = true
-		reserve_ammo += useable_amount
+		
+		if amount > useable_amount:
+			reserve_ammo += useable_amount
+		else:
+			reserve_ammo += amount
+		
 		emit_signal("ammo_changed")
 		reloadstart_audio.play()
 	
