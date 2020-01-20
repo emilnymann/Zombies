@@ -475,7 +475,7 @@ playing = true
 editor/display_folded = true
 frames = SubResource( 2 )
 animation = "idle_rifle"
-frame = 3
+frame = 12
 playing = true
 offset = Vector2( 50, -50 )
 
@@ -531,6 +531,7 @@ wait_time = 0.5
 one_shot = true
 
 [node name="Audio" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Fire" type="AudioStreamPlayer" parent="Audio"]
 stream = ExtResource( 317 )
