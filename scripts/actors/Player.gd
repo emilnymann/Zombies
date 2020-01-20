@@ -43,7 +43,6 @@ onready var body = $Body
 # signals
 signal health_changed
 signal ammo_changed
-signal reloaded
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -181,8 +180,6 @@ func _on_ReloadTimer_timeout():
 	else:
 		ammo = reserve_ammo
 		reserve_ammo = 0
-		
-	emit_signal("reloaded")
 	
 	reloadend_audio.play()
 	emit_signal("ammo_changed")

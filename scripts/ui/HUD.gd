@@ -20,10 +20,10 @@ func set_player(p):
 	
 	player.connect("health_changed", self, "_on_Player_health_changed")
 	player.connect("ammo_changed", self, "_on_Player_fired")
-	player.connect("reloaded", self, "_on_Player_reloaded")
 	
 	health_counter.text = str(player.health)
 	ammo_counter.text = str(player.ammo)
+	ammo_reserve_counter.text = str(player.reserve_ammo)
 
 func _on_Player_health_changed():
 	var hp = player.health
@@ -41,12 +41,6 @@ func _on_Player_health_changed():
 	health_counter.set("custom_colors/font_color", hp_color)
 	
 func _on_Player_fired():
-	var ammo = player.ammo
-	var max_ammo = player.max_ammo
-	
-	ammo_counter.text = str(ammo)
-	
-func _on_Player_reloaded():
 	var reserve_ammo = player.reserve_ammo
 	var ammo = player.ammo
 	
