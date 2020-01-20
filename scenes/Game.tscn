@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scripts/misc/Global.gd" type="Script" id=1]
 [ext_resource path="res://entities/UI/MainMenu.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/music/mainmenu_music.ogg" type="AudioStream" id=3]
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 1 )
@@ -9,3 +10,9 @@ level_path = "res://entities/levels/LevelLabEntrance01.tscn"
 level_name = "Lab Entrance"
 
 [node name="MainMenu" parent="." instance=ExtResource( 2 )]
+
+[node name="Music" type="Node2D" parent="."]
+
+[node name="MusicMain" type="AudioStreamPlayer" parent="Music"]
+stream = ExtResource( 3 )
+autoplay = true

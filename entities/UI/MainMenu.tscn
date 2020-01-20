@@ -69,19 +69,19 @@ margin_bottom = 62.5
 theme = ExtResource( 3 )
 
 [node name="SettingsContainer" type="VBoxContainer" parent="SettingsPopup"]
-margin_left = 30.0
-margin_top = 30.0
-margin_right = 30.0
-margin_bottom = 30.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 236.0
+margin_bottom = 121.0
 
 [node name="SettingsLabel" type="Label" parent="SettingsPopup/SettingsContainer"]
-margin_right = 172.0
+margin_right = 232.0
 margin_bottom = 21.0
 text = "Settings"
 
 [node name="FullscreenContainer" type="HBoxContainer" parent="SettingsPopup/SettingsContainer"]
-margin_top = 36.0
-margin_right = 172.0
+margin_top = 25.0
+margin_right = 232.0
 margin_bottom = 57.0
 
 [node name="FullscreenLabel" type="Label" parent="SettingsPopup/SettingsContainer/FullscreenContainer"]

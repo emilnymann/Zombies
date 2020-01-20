@@ -3,6 +3,7 @@ extends Node2D
 onready var main_menu = $MainMenu
 onready var loading_screen = load("res://entities/UI/LoadingScreen.tscn")
 onready var crosshair = load("res://assets/ui/hud/crosshair.png")
+onready var music = $Music/MusicMain
 export var level_path : String
 export var level_name : String
 
@@ -26,6 +27,7 @@ func _on_FullscreenCheckButton_toggled(button_pressed):
 	OS.window_fullscreen = !OS.window_fullscreen
 	
 func _on_continue_pressed():
+	music.seek(68.0)
 	var level = loading_screen.level
 	level = level.instance()
 	remove_child(loading_screen)
