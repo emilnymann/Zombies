@@ -15,4 +15,5 @@ level_name = "Lab Entrance"
 
 [node name="MusicMain" type="AudioStreamPlayer" parent="Music"]
 stream = ExtResource( 3 )
+volume_db = -17.0
 autoplay = true
