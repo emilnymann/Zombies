@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scripts/levels/LevelLabEntrance01.gd" type="Script" id=1]
 [ext_resource path="res://entities/fx/BloodSpatter.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://entities/actors/Player.tscn" type="PackedScene" id=14]
 [ext_resource path="res://entities/misc/PlayerCamera.tscn" type="PackedScene" id=15]
 [ext_resource path="res://entities/UI/HUD.tscn" type="PackedScene" id=16]
+[ext_resource path="res://entities/pickups/AmmoPouch.tscn" type="PackedScene" id=17]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 93.8784, 298.97 )
@@ -189,3 +190,6 @@ position = Vector2( -117.422, 296.418 )
 position = Vector2( -117.422, 296.418 )
 
 [node name="HUD" parent="." instance=ExtResource( 16 )]
+
+[node name="AmmoPouch" parent="." instance=ExtResource( 17 )]
+position = Vector2( 660, 269.168 )

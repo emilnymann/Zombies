@@ -162,6 +162,18 @@ func kill():
 	is_dead = true
 	var mainmenu = load("res://entities/UI/MainMenu.tscn")
 	get_tree().change_scene_to(mainmenu)
+	
+func add_ammo(amount):
+	var picked_up = false
+	var useable_amount = max_reserve_ammo - reserve_ammo
+	
+	if useable_amount > 0:
+		picked_up = true
+		reserve_ammo += useable_amount
+		emit_signal("ammo_changed")
+		reloadstart_audio.play()
+	
+	return picked_up
 
 func _on_muzzle_timeout():
 	muzzle.visible = false
