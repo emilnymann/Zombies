@@ -17,3 +17,4 @@ level_name = "Lab Entrance"
 stream = ExtResource( 3 )
 volume_db = -17.0
 autoplay = true
+bus = "Music"
