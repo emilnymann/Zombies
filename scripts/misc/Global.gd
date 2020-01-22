@@ -7,12 +7,15 @@ onready var music = $Music/MusicMain
 export var level_path : String
 export var level_name : String
 
+func _ready():
+	main_menu.connect("play_button_pressed", self, "_on_PlayButton_pressed")
+
 func _on_PlayButton_pressed():
-	remove_child(main_menu)
 	loading_screen = loading_screen.instance()
 	loading_screen.connect("continue_pressed", self, "_on_continue_pressed")
 	loading_screen.level_to_load = level_path
 	loading_screen.level_display_name = level_name
+	remove_child(main_menu)
 	add_child(loading_screen)
 	
 func _on_QuitButton_pressed():

@@ -14,6 +14,9 @@ var fullscreen : bool
 var master_volume : float
 var music_volume : float
 
+# signals
+signal play_button_pressed
+
 func _ready():
 	var master_volume_db = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Master"))
 	var music_volume_db = AudioServer.get_bus_volume_db(AudioServer.get_bus_index("Music"))
@@ -52,3 +55,7 @@ func _on_Main_OptionsButton_pressed():
 
 func _on_Main_QuitButton_pressed():
 	get_tree().quit()
+
+
+func _on_Main_PlayButton_pressed():
+	emit_signal("play_button_pressed")
