@@ -16,7 +16,6 @@ anchor_bottom = 1.0
 theme = ExtResource( 2 )
 
 [node name="MenuContainer" type="VBoxContainer" parent="MainMenuControl"]
-editor/display_folded = true
 anchor_left = 0.5
 anchor_top = 0.6
 anchor_right = 0.5
@@ -40,6 +39,7 @@ rect_min_size = Vector2( 0, 50 )
 color = Color( 1, 1, 1, 0 )
 
 [node name="MenuButtonsContainer" type="VBoxContainer" parent="MainMenuControl/MenuContainer"]
+editor/display_folded = true
 margin_left = 353.0
 margin_top = 130.0
 margin_right = 427.0
@@ -70,7 +70,6 @@ anchor_bottom = 1.0
 theme = ExtResource( 2 )
 
 [node name="MenuContainer" type="VBoxContainer" parent="OptionsMenuControl"]
-editor/display_folded = true
 anchor_left = 0.5
 anchor_top = 0.6
 anchor_right = 0.5
@@ -94,7 +93,6 @@ rect_min_size = Vector2( 0, 50 )
 color = Color( 1, 1, 1, 0 )
 
 [node name="OptionsContainer" type="VBoxContainer" parent="OptionsMenuControl/MenuContainer"]
-editor/display_folded = true
 margin_top = 79.0
 margin_right = 780.0
 margin_bottom = 280.0
@@ -148,6 +146,7 @@ margin_right = 200.0
 margin_bottom = 16.0
 min_value = -100.0
 max_value = 0.0
+ticks_on_borders = true
 
 [node name="MusicVolumeContainer" type="HBoxContainer" parent="OptionsMenuControl/MenuContainer/OptionsContainer"]
 margin_top = 78.0
